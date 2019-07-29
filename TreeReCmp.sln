@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "treerecmp", "treerecmp\treerecmp.vcxproj", "{06D73D7E-01F9-4E1F-B8E7-8C26EC29B30B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{06D73D7E-01F9-4E1F-B8E7-8C26EC29B30B}.Release|x64.Build.0 = Release|x64
 		{06D73D7E-01F9-4E1F-B8E7-8C26EC29B30B}.Release|x86.ActiveCfg = Release|Win32
 		{06D73D7E-01F9-4E1F-B8E7-8C26EC29B30B}.Release|x86.Build.0 = Release|Win32
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Debug|x64.ActiveCfg = Debug|x64
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Debug|x64.Build.0 = Debug|x64
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Debug|x86.Build.0 = Debug|Win32
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Release|x64.ActiveCfg = Release|x64
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Release|x64.Build.0 = Release|x64
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Release|x86.ActiveCfg = Release|Win32
+		{CE0477F7-9720-4CB0-9E22-2E9D255BA07E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
