@@ -7,3 +7,6 @@
 [submodule "bpp-phyl"]
 	path = bpp-phyl
 	url = https://github.com/TreeCmp/bpp-phyl.git
+[submodule "googletest"]
+	path = googletest
+	url = https://github.com/google/googletest.git
