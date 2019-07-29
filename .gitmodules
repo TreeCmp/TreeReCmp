@@ -1,0 +1,9 @@
+[submodule "bpp-core"]
+	path = bpp-core
+	url = https://github.com/TreeCmp/bpp-core.git
+[submodule "bpp-seq"]
+	path = bpp-seq
+	url = https://github.com/TreeCmp/bpp-seq.git
+[submodule "bpp-phyl"]
+	path = bpp-phyl
+	url = https://github.com/TreeCmp/bpp-phyl.git
