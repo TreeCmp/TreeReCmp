@@ -1,0 +1,15 @@
+.vs
+*.db
+*.obj
+*.exe
+*.o
+*.prv
+*.layout
+*.depend
+*.out
+Debug/*
+Release/*
+x64/*
+treerecmp/Debug/*
+treerecmp/Release/*
+treerecmp/x64/*
