@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{2614d604-8c11-453b-9aba-bd9630bbc85f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graph">
+      <UniqueIdentifier>{d47d6cad-b757-4e1b-a42f-88abfb07cbf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{39177bc7-d1fc-428c-8916-c1e86a857337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Io">
+      <UniqueIdentifier>{41e58558-c724-4723-a00c-2e34385aef32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{ab992b4a-d297-4963-9f59-ff9887f18b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Text">
+      <UniqueIdentifier>{653888d4-5a2d-49f1-b896-2f9155f9e734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Text">
+      <UniqueIdentifier>{b291f320-f712-44cc-b983-ef55ff39b8d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric">
+      <UniqueIdentifier>{fd44c683-454d-4214-8d60-e58ea820613d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{cb96b77b-a512-47df-8a46-7bdc62c8fc94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graph">
+      <UniqueIdentifier>{7788fbe8-63a6-44da-8116-ae074acbcda5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric\Function">
+      <UniqueIdentifier>{10ce1b0a-2d94-452a-8087-95603934f45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric\Prob">
+      <UniqueIdentifier>{b2fe5613-b727-4ec1-b8c4-4fe54da266a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{fe6b91a9-e7e9-4703-b1c8-c15935e0d2d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Io">
+      <UniqueIdentifier>{1f77552e-8aad-4d04-9392-5fac583a8e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{cd58abdf-2dc0-4166-b48f-5f0891db6a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Fig">
+      <UniqueIdentifier>{75e56940-2846-43e3-a645-3138504f81b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Font">
+      <UniqueIdentifier>{774b8264-ac68-42ed-a089-777ae3d3dfb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Latex">
+      <UniqueIdentifier>{237a47ca-6409-4a06-946f-560e7bf6f980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Molscript">
+      <UniqueIdentifier>{c3fab6f9-98c3-48f8-9047-b88146401236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\R">
+      <UniqueIdentifier>{619c93d2-9577-489e-9b23-9ee257543459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\Svg">
+      <UniqueIdentifier>{7113780a-ff02-4195-b14f-352f606cd4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Fig">
+      <UniqueIdentifier>{4e8e5306-5ac1-4c76-8823-d7e428a1689e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Font">
+      <UniqueIdentifier>{0864669d-2ba6-408f-a21b-dff526463560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Latex">
+      <UniqueIdentifier>{fd8ad175-6631-4835-b07b-a9140a9b652b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Molscript">
+      <UniqueIdentifier>{6335d961-d495-4cb6-bf87-a86f2e1374d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\R">
+      <UniqueIdentifier>{87453ecd-2365-4196-8d59-68f8c5212da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Svg">
+      <UniqueIdentifier>{392296e7-8cab-45ca-8fec-4c9f1ca023f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric\Hmm">
+      <UniqueIdentifier>{43edd504-4d00-4b29-95d5-b932ebfc535d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric\Matrix">
+      <UniqueIdentifier>{604aa02b-5c8a-47ae-8106-dd32d1d04371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric\Stat">
+      <UniqueIdentifier>{daf5d57e-faa2-45dc-8d9d-a9943c403163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric\Random">
+      <UniqueIdentifier>{36d976e8-0d71-454b-909c-c9890deb1017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Numeric\Stat\Mva">
+      <UniqueIdentifier>{a4277e2c-26ac-4b1f-8182-6c660cae1ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric">
+      <UniqueIdentifier>{1937b52f-a444-4fb1-a019-f2ef84a33207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric\Function">
+      <UniqueIdentifier>{a7a4c732-a956-459c-a473-ebb108fea874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric\Random">
+      <UniqueIdentifier>{b490f70a-d8d5-4e70-b8d7-b04eeb77dcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric\Hmm">
+      <UniqueIdentifier>{cf3991b3-b2e6-45ab-891c-2e54ffd96023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric\Matrix">
+      <UniqueIdentifier>{65c061a4-dce5-4b84-85d8-3adb42b6e9a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric\Stat">
+      <UniqueIdentifier>{36c0b4be-55dd-4a33-b379-72e47c3fbc3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric\Stat\Mva">
+      <UniqueIdentifier>{9030b0e3-85e5-41dc-a34b-3a73e3557f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Numeric\Prob">
+      <UniqueIdentifier>{dfe6bc49-8106-456d-8cfb-140b93df1de7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bpp-core\src\Bpp\BppBoolean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\BppString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\BppVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Clonable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Exceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Text\KeyvalTools.h">
+      <Filter>Header Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Text\NestedStringTokenizer.h">
+      <Filter>Header Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Text\StringTokenizer.h">
+      <Filter>Header Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Text\TextTools.h">
+      <Filter>Header Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\App\ApplicationTools.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\App\BppApplication.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\App\NumCalcApplicationTools.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationDAGraphImplObserver.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationDAGraphObserver.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationGraphImplObserver.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationGraphObserver.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationTreeGraphImplObserver.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationTreeGraphObserver.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\DAGraph.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\DAGraphImpl.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\GlobalGraph.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\Graph.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\GraphObserver.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\TreeGraph.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graph\TreeGraphImpl.h">
+      <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\AbstractGraphicDevice.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\ColorManager.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\ColorSet.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\ColorTools.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\DefaultColorSet.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\GraphicDevice.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Point2D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Point2DTools.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\RgbColor.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\BppODiscreteDistributionFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\BppOParametrizableFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\FileTools.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoDiscreteDistribution.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoDiscreteDistributionFactory.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoParametrizable.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Io\OutputStream.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Utils\AttributesTools.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Utils\MapTools.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AbstractParameterAliasable.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AbstractParametrizable.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AdaptiveKernelDensityEstimation.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AutoParameter.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Constraints.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\DataTable.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\IntegerTools.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Number.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\NumConstants.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\NumTools.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Parameter.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParameterAliasable.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParameterExceptions.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParameterList.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Parametrizable.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParametrizableCollection.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Range.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Table.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\TableExceptions.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\TransformedParameter.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\VectorExceptions.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\VectorTools.h">
+      <Filter>Header Files\Numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\AbstractNumericalDerivative.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\AbstractOptimizer.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\BfgsMultiDimensions.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\BrentOneDimension.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\ConjugateGradientMultiDimensions.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\DirectionFunction.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\DownhillSimplexMethod.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\FivePointsNumericalDerivative.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\Functions.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\FunctionTools.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\GoldenSectionSearch.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\MetaOptimizer.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\NewtonBacktrackOneDimension.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\NewtonOneDimension.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\OneDimensionOptimizationTools.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\OptimizationStopCondition.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\Optimizer.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\PowellMultiDimensions.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\ReparametrizationFunctionWrapper.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\SimpleMultiDimensions.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\SimpleNewtonMultiDimensions.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\ThreePointsNumericalDerivative.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\TwoPointsNumericalDerivative.h">
+      <Filter>Header Files\Numeric\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\AbstractDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\BetaDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\ConstantDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\DirichletDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\DiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\ExponentialDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\GammaDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\GaussianDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\InvariantMixedDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\MixtureOfDiscreteDistributions.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\MultipleDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\SimpleDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\Simplex.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\TruncatedExponentialDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\UniformDiscreteDistribution.h">
+      <Filter>Header Files\Numeric\Prob</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\ContingencyTableGenerator.h">
+      <Filter>Header Files\Numeric\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\RandomFactory.h">
+      <Filter>Header Files\Numeric\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\RandomTools.h">
+      <Filter>Header Files\Numeric\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\Uniform01K.h">
+      <Filter>Header Files\Numeric\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\Uniform01QD.h">
+      <Filter>Header Files\Numeric\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\Uniform01WH.h">
+      <Filter>Header Files\Numeric\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Fig\XFigGraphicDevice.h">
+      <Filter>Header Files\Graphics\Fig</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Fig\XFigLaTeXFontManager.h">
+      <Filter>Header Files\Graphics\Fig</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Fig\XFigPostscriptFontManager.h">
+      <Filter>Header Files\Graphics\Fig</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Font\Font.h">
+      <Filter>Header Files\Graphics\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Font\FontManager.h">
+      <Filter>Header Files\Graphics\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Latex\DvipsColorSet.h">
+      <Filter>Header Files\Graphics\Latex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Latex\PgfGraphicDevice.h">
+      <Filter>Header Files\Graphics\Latex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Molscript\MolscriptColorSet.h">
+      <Filter>Header Files\Graphics\Molscript</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\R\RColorSet.h">
+      <Filter>Header Files\Graphics\R</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Svg\SvgGraphicDevice.h">
+      <Filter>Header Files\Graphics\Svg</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\AbstractHmmTransitionMatrix.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\AutoCorrelationTransitionMatrix.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\FullHmmTransitionMatrix.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmEmissionProbabilities.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmExceptions.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmLikelihood.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmStateAlphabet.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmTransitionMatrix.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\LogsumHmmLikelihood.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\LowMemoryRescaledHmmLikelihood.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\RescaledHmmLikelihood.h">
+      <Filter>Header Files\Numeric\Hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\EigenValue.h">
+      <Filter>Header Files\Numeric\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\LUDecomposition.h">
+      <Filter>Header Files\Numeric\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\Matrix.h">
+      <Filter>Header Files\Numeric\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\MatrixTools.h">
+      <Filter>Header Files\Numeric\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\ContingencyTableTest.h">
+      <Filter>Header Files\Numeric\Stat</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\StatTest.h">
+      <Filter>Header Files\Numeric\Stat</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\StatTools.h">
+      <Filter>Header Files\Numeric\Stat</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\Mva\CorrespondenceAnalysis.h">
+      <Filter>Header Files\Numeric\Stat\Mva</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\Mva\DualityDiagram.h">
+      <Filter>Header Files\Numeric\Stat\Mva</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\Mva\PrincipalComponentAnalysis.h">
+      <Filter>Header Files\Numeric\Stat\Mva</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bpp-core\src\Bpp\BppString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Exceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Io\BppODiscreteDistributionFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Io\BppOParametrizableFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Io\FileTools.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Io\IoDiscreteDistributionFactory.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Text\TextTools.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Parameter.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\ParameterList.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AbstractParameterAliasable.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AbstractParametrizable.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AdaptiveKernelDensityEstimation.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AutoParameter.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\DataTable.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\NumTools.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\ParameterExceptions.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\VectorTools.cpp">
+      <Filter>Source Files\Numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\App\ApplicationTools.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\App\BppApplication.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\App\NumCalcApplicationTools.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\AbstractOptimizer.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\BfgsMultiDimensions.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\BrentOneDimension.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\ConjugateGradientMultiDimensions.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\DirectionFunction.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\DownhillSimplexMethod.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\FivePointsNumericalDerivative.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\FunctionTools.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\GoldenSectionSearch.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\MetaOptimizer.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\NewtonBacktrackOneDimension.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\NewtonOneDimension.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\OneDimensionOptimizationTools.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\OptimizationStopCondition.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\PowellMultiDimensions.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\ReparametrizationFunctionWrapper.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\SimpleMultiDimensions.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\SimpleNewtonMultiDimensions.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\ThreePointsNumericalDerivative.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\TwoPointsNumericalDerivative.cpp">
+      <Filter>Source Files\Numeric\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\AbstractDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\BetaDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\ConstantDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\DirichletDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\ExponentialDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\GammaDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\GaussianDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\InvariantMixedDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\MixtureOfDiscreteDistributions.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\SimpleDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\Simplex.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\TruncatedExponentialDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\UniformDiscreteDistribution.cpp">
+      <Filter>Source Files\Numeric\Prob</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Text\KeyvalTools.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Text\NestedStringTokenizer.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Text\StringTokenizer.cpp">
+      <Filter>Source Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\ContingencyTableGenerator.cpp">
+      <Filter>Source Files\Numeric\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\RandomTools.cpp">
+      <Filter>Source Files\Numeric\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\Uniform01K.cpp">
+      <Filter>Source Files\Numeric\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\Uniform01QD.cpp">
+      <Filter>Source Files\Numeric\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\Uniform01WH.cpp">
+      <Filter>Source Files\Numeric\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graph\GlobalGraph.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\ColorTools.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\GraphicDevice.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Fig\XFigGraphicDevice.cpp">
+      <Filter>Source Files\Graphics\Fig</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Fig\XFigLaTeXFontManager.cpp">
+      <Filter>Source Files\Graphics\Fig</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Fig\XFigPostscriptFontManager.cpp">
+      <Filter>Source Files\Graphics\Fig</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Font\Font.cpp">
+      <Filter>Source Files\Graphics\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Latex\DvipsColorSet.cpp">
+      <Filter>Source Files\Graphics\Latex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Latex\PgfGraphicDevice.cpp">
+      <Filter>Source Files\Graphics\Latex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Molscript\MolscriptColorSet.cpp">
+      <Filter>Source Files\Graphics\Molscript</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\R\RColorSet.cpp">
+      <Filter>Source Files\Graphics\R</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Svg\SvgGraphicDevice.cpp">
+      <Filter>Source Files\Graphics\Svg</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\AbstractHmmTransitionMatrix.cpp">
+      <Filter>Source Files\Numeric\Hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\AutoCorrelationTransitionMatrix.cpp">
+      <Filter>Source Files\Numeric\Hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\FullHmmTransitionMatrix.cpp">
+      <Filter>Source Files\Numeric\Hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\HmmLikelihood.cpp">
+      <Filter>Source Files\Numeric\Hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\LogsumHmmLikelihood.cpp">
+      <Filter>Source Files\Numeric\Hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\LowMemoryRescaledHmmLikelihood.cpp">
+      <Filter>Source Files\Numeric\Hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\RescaledHmmLikelihood.cpp">
+      <Filter>Source Files\Numeric\Hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\ContingencyTableTest.cpp">
+      <Filter>Source Files\Numeric\Stat</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\StatTools.cpp">
+      <Filter>Source Files\Numeric\Stat</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\Mva\CorrespondenceAnalysis.cpp">
+      <Filter>Source Files\Numeric\Stat\Mva</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\Mva\DualityDiagram.cpp">
+      <Filter>Source Files\Numeric\Stat\Mva</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\Mva\PrincipalComponentAnalysis.cpp">
+      <Filter>Source Files\Numeric\Stat\Mva</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

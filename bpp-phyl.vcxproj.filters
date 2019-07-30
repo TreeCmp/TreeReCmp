@@ -1,0 +1,1245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Io">
+      <UniqueIdentifier>{8cb7356e-920b-484d-9f9c-040de1302dd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Io">
+      <UniqueIdentifier>{5d15883c-82e3-4bfc-bc81-f64f8c35105b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model">
+      <UniqueIdentifier>{9931a2af-f031-4d79-8242-83606d306a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\Nucleotide">
+      <UniqueIdentifier>{3f723f72-d31e-4dec-b4fd-889e50d26618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{fc226f96-7450-4aab-b125-e3125a4dc1e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Distance">
+      <UniqueIdentifier>{beafcf42-0370-40b4-a69f-b03ba949a1a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Distance">
+      <UniqueIdentifier>{0e33f33c-7851-4d6c-b411-2d36b4d58ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Likelihood">
+      <UniqueIdentifier>{2b61c58b-65a3-4d23-a06d-153098c9b27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Likelihood">
+      <UniqueIdentifier>{cdd72b63-58fe-4ace-8f0c-78c0dfa9045a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Parsimony">
+      <UniqueIdentifier>{36242717-56ec-4ffd-a3ad-6d0215dbfd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{8ea90de4-3409-41f3-8474-dccfb6f8c504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Simulation">
+      <UniqueIdentifier>{3eb93fa5-ef94-422e-84ca-5300b48c1036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mapping">
+      <UniqueIdentifier>{b2d4b015-47be-44c4-b6f9-cc8a584ac040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{8b5dc0d9-d822-4ee1-b6ab-1cedfc755ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Codon">
+      <UniqueIdentifier>{e7145e65-e28c-455a-ba44-5b882402bd4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\FrequenciesSet">
+      <UniqueIdentifier>{266f2c3b-d7e9-40a1-ba89-ff4aa33ba63e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Protein">
+      <UniqueIdentifier>{69fd5f09-7a90-4774-abf6-58279796db08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\RateDistribution">
+      <UniqueIdentifier>{9e1c9c45-b160-4ebe-b87c-3fe1e385aec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Nucleotide">
+      <UniqueIdentifier>{deec50e3-c542-4477-8403-af2f70054463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Simulation">
+      <UniqueIdentifier>{150f12a3-88df-42d6-99f4-4438d7121390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mapping">
+      <UniqueIdentifier>{cb7dfcaf-7798-4dfd-a741-93a9d79e2693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{4ee50875-6926-4f4d-9255-d85b93339949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{537984eb-a51f-4b8e-b5ab-9e834d726afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\Codon">
+      <UniqueIdentifier>{99153be0-77cf-4210-ac10-d4a6b1399b2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\FrequenciesSet">
+      <UniqueIdentifier>{5e60b98f-ed21-4495-8b33-5b375c460316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\RateDistribution">
+      <UniqueIdentifier>{0c90d130-573c-4967-ab48-a2b1655737bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\Protein">
+      <UniqueIdentifier>{93bdfa06-188f-44ba-ac88-f8512e0ad2d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\Parsimony">
+      <UniqueIdentifier>{b8a35817-e5e1-443a-aca7-9991770aded2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\Newick.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\TreeTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\TreeTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\TreeTemplateTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\NodeTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\TreeExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\BipartitionList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\BipartitionTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\F84.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\gBGC.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\GTR.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\HKY85.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\JCnuc.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\K80.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\L95.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\NucleotideSubstitutionModel.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\RN95.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\RN95s.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\SSR.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\T92.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\TN93.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\YpR.h">
+      <Filter>Header Files\Model\Nucleotide</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Distance\AbstractAgglomerativeDistanceMethod.h">
+      <Filter>Header Files\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Distance\BioNJ.h">
+      <Filter>Header Files\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Distance\DistanceEstimation.h">
+      <Filter>Header Files\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Distance\DistanceMethod.h">
+      <Filter>Header Files\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Distance\HierarchicalClustering.h">
+      <Filter>Header Files\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Distance\NeighborJoining.h">
+      <Filter>Header Files\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Distance\PGMA.h">
+      <Filter>Header Files\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractDiscreteRatesAcrossSitesTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractNonHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractTreeLikelihoodData.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\ClockTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DiscreteRatesAcrossSitesTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRASDRTreeLikelihoodData.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRASRTreeLikelihoodData.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRHomogeneousMixedTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRNonHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRTreeLikelihoodTools.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\GlobalClockTreeLikelihoodFunctionWrapper.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\HomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\MarginalAncestralStateReconstruction.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\NNIHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\NonHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\PairedSiteLikelihoods.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\PseudoNewtonOptimizer.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RASTools.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RHomogeneousClockTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RHomogeneousMixedTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RNonHomogeneousMixedTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RNonHomogeneousTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\SitePartitionTreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\TreeLikelihood.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\TreeLikelihoodData.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Likelihood\TreeLikelihoodTools.h">
+      <Filter>Header Files\Likelihood</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Parsimony\AbstractTreeParsimonyData.h">
+      <Filter>Header Files\Parsimony</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Parsimony\AbstractTreeParsimonyScore.h">
+      <Filter>Header Files\Parsimony</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Parsimony\DRTreeParsimonyData.h">
+      <Filter>Header Files\Parsimony</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Parsimony\DRTreeParsimonyScore.h">
+      <Filter>Header Files\Parsimony</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Parsimony\TreeParsimonyData.h">
+      <Filter>Header Files\Parsimony</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Parsimony\TreeParsimonyScore.h">
+      <Filter>Header Files\Parsimony</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\AncestralStateReconstruction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\NNISearchable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\NNITopologySearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\OptimizationTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\PatternTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\PhyloStatistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\SitePatterns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\TopologySearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractBiblioMixedSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractBiblioSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractFromSubstitutionModelTransitionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractKroneckerWordSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractMixedSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractWordSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractWrappedModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\AnonymousSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\BinarySubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\FromMixtureSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\G2001.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\InMixedSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\KroneckerWordSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\MarkovModulatedSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\MixedSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\MixedSubstitutionModelSet.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\MixtureOfASubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\MixtureOfSubstitutionModels.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\OneChangeRegisterTransitionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\OneChangeTransitionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\RE08.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\RegisterRatesSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\StateMap.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\SubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\SubstitutionModelSet.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\SubstitutionModelSetTools.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\TS98.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\WordSubstitutionModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\WrappedModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\App\PhylogeneticsApplicationTools.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Graphics\AbstractDendrogramPlot.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Graphics\AbstractTreeDrawing.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Graphics\CladogramPlot.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Graphics\PhylogramPlot.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Graphics\TreeDrawing.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Graphics\TreeDrawingDisplayControler.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Graphics\TreeDrawingListener.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppOFrequenciesSetFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppOMultiTreeReaderFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppOMultiTreeWriterFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppORateDistributionFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppOSubstitutionModelFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppOTransitionModelFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppOTreeReaderFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\BppOTreeWriterFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoDistanceMatrix.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoDistanceMatrixFactory.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoFrequenciesSet.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoFrequenciesSetFactory.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoPairedSiteLikelihoods.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoSubstitutionModel.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoSubstitutionModelFactory.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoTree.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\IoTreeFactory.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\NexusIoTree.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\Nhx.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Io\PhylipDistanceMatrixFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\CategorySubstitutionRegister.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\DecompositionMethods.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\DecompositionReward.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\DecompositionSubstitutionCount.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\LaplaceSubstitutionCount.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\Mapping.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\NaiveSubstitutionCount.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\OneJumpSubstitutionCount.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\ProbabilisticRewardMapping.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\ProbabilisticSubstitutionMapping.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\Reward.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\RewardMapping.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\RewardMappingTools.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\SubstitutionCount.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\SubstitutionMapping.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\SubstitutionMappingTools.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\SubstitutionRegister.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\UniformizationSubstitutionCount.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Mapping\WeightedSubstitutionCount.h">
+      <Filter>Header Files\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonAAFitnessSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonAARateSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonBGCSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonClusterAASubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonCpGSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonDistanceSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonFitnessSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonFrequenciesSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonPhaseFrequenciesSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractKroneckerCodonSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonAdHocSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonDistanceFrequenciesSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonDistancePhaseFrequenciesSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonDistanceSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\GY94.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\KCM.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\KroneckerCodonDistanceFrequenciesSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\KroneckerCodonDistanceSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\MG94.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\SENCA.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\TripletSubstitutionModel.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YN98.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M1.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M2.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M3.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M7.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M8.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M9.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M10.h">
+      <Filter>Header Files\Model\Codon</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\CodonFrequenciesSet.h">
+      <Filter>Header Files\Model\FrequenciesSet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\FrequenciesSet.h">
+      <Filter>Header Files\Model\FrequenciesSet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\MvaFrequenciesSet.h">
+      <Filter>Header Files\Model\FrequenciesSet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\NucleotideFrequenciesSet.h">
+      <Filter>Header Files\Model\FrequenciesSet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\ProteinFrequenciesSet.h">
+      <Filter>Header Files\Model\FrequenciesSet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\WordFrequenciesSet.h">
+      <Filter>Header Files\Model\FrequenciesSet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\Coala.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\CoalaCore.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\DSO78.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\JCprot.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\JTT92.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LG08.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LG10_EX_EHO.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LGL08_CAT.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_EHO.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_EX2.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_EX3.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_UL2.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_UL3.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\ProteinSubstitutionModel.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\UserProteinSubstitutionModel.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\WAG01.h">
+      <Filter>Header Files\Model\Protein</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\RateDistribution\ConstantRateDistribution.h">
+      <Filter>Header Files\Model\RateDistribution</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\RateDistribution\ExponentialDiscreteRateDistribution.h">
+      <Filter>Header Files\Model\RateDistribution</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\RateDistribution\GammaDiscreteRateDistribution.h">
+      <Filter>Header Files\Model\RateDistribution</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-phyl\src\Bpp\Phyl\Model\RateDistribution\GaussianDiscreteRateDistribution.h">
+      <Filter>Header Files\Model\RateDistribution</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\Newick.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\TreeTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\TreeTemplateTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\TreeExceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\BipartitionList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\BipartitionTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\F84.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\gBGC.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\GTR.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\HKY85.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\JCnuc.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\K80.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\L95.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\RN95.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\RN95s.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\SSR.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\T92.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\TN93.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Nucleotide\YpR.cpp">
+      <Filter>Source Files\Model\Nucleotide</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Distance\AbstractAgglomerativeDistanceMethod.cpp">
+      <Filter>Source Files\Distance</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Distance\BioNJ.cpp">
+      <Filter>Source Files\Distance</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Distance\DistanceEstimation.cpp">
+      <Filter>Source Files\Distance</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Distance\HierarchicalClustering.cpp">
+      <Filter>Source Files\Distance</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Distance\NeighborJoining.cpp">
+      <Filter>Source Files\Distance</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Distance\PGMA.cpp">
+      <Filter>Source Files\Distance</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractDiscreteRatesAcrossSitesTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractHomogeneousTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractNonHomogeneousTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\AbstractTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRASDRTreeLikelihoodData.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRASRTreeLikelihoodData.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRHomogeneousMixedTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRHomogeneousTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRNonHomogeneousTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\DRTreeLikelihoodTools.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\GlobalClockTreeLikelihoodFunctionWrapper.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\MarginalAncestralStateReconstruction.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\NNIHomogeneousTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\PairedSiteLikelihoods.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\PseudoNewtonOptimizer.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RASTools.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RHomogeneousClockTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RHomogeneousMixedTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RHomogeneousTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RNonHomogeneousMixedTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\RNonHomogeneousTreeLikelihood.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Likelihood\TreeLikelihoodTools.cpp">
+      <Filter>Source Files\Likelihood</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Parsimony\AbstractTreeParsimonyScore.cpp">
+      <Filter>Source Files\App\Parsimony</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Parsimony\DRTreeParsimonyData.cpp">
+      <Filter>Source Files\App\Parsimony</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Parsimony\DRTreeParsimonyScore.cpp">
+      <Filter>Source Files\App\Parsimony</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\OptimizationTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\NNITopologySearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\PatternTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\PhyloStatistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\SitePatterns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractBiblioMixedSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractBiblioSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractFromSubstitutionModelTransitionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractKroneckerWordSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractMixedSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\AbstractWordSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\BinarySubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\FromMixtureSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\InMixedSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\KroneckerWordSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\MarkovModulatedSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\MixedSubstitutionModelSet.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\MixtureOfASubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\MixtureOfSubstitutionModels.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\OneChangeRegisterTransitionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\OneChangeTransitionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\RE08.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\RegisterRatesSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\StateMap.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\SubstitutionModelSet.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\SubstitutionModelSetTools.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\WordSubstitutionModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\App\PhylogeneticsApplicationTools.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Graphics\AbstractDendrogramPlot.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Graphics\AbstractTreeDrawing.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Graphics\CladogramPlot.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Graphics\PhylogramPlot.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Graphics\TreeDrawingDisplayControler.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Graphics\TreeDrawingListener.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppOFrequenciesSetFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppOMultiTreeReaderFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppOMultiTreeWriterFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppORateDistributionFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppOSubstitutionModelFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppOTransitionModelFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppOTreeReaderFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\BppOTreeWriterFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\IoDistanceMatrixFactory.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\IoFrequenciesSetFactory.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\IoPairedSiteLikelihoods.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\IoSubstitutionModelFactory.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\IoTreeFactory.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\NexusIoTree.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\Nhx.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Io\PhylipDistanceMatrixFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\DecompositionMethods.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\DecompositionReward.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\DecompositionSubstitutionCount.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\LaplaceSubstitutionCount.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\NaiveSubstitutionCount.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\OneJumpSubstitutionCount.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\ProbabilisticRewardMapping.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\ProbabilisticSubstitutionMapping.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\RewardMappingTools.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\SubstitutionMappingTools.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\SubstitutionRegister.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\UniformizationSubstitutionCount.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Mapping\WeightedSubstitutionCount.cpp">
+      <Filter>Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonAAFitnessSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonAARateSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonBGCSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonClusterAASubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonCpGSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonDistanceSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonFitnessSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonFrequenciesSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonPhaseFrequenciesSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractCodonSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\AbstractKroneckerCodonSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonAdHocSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonDistanceFrequenciesSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonDistancePhaseFrequenciesSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\CodonDistanceSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\GY94.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\KCM.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\KroneckerCodonDistanceFrequenciesSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\KroneckerCodonDistanceSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\MG94.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\SENCA.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\TripletSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YN98.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M1.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M2.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M3.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M7.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M8.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M9.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Codon\YNGP_M10.cpp">
+      <Filter>Source Files\Model\Codon</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\CodonFrequenciesSet.cpp">
+      <Filter>Source Files\Model\FrequenciesSet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\FrequenciesSet.cpp">
+      <Filter>Source Files\Model\FrequenciesSet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\MvaFrequenciesSet.cpp">
+      <Filter>Source Files\Model\FrequenciesSet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\NucleotideFrequenciesSet.cpp">
+      <Filter>Source Files\Model\FrequenciesSet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\FrequenciesSet\WordFrequenciesSet.cpp">
+      <Filter>Source Files\Model\FrequenciesSet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\Coala.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\CoalaCore.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\DSO78.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\JCprot.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\JTT92.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LG08.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LG10_EX_EHO.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LGL08_CAT.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_EHO.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_EX2.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_EX3.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_UL2.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\LLG08_UL3.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\UserProteinSubstitutionModel.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Model\Protein\WAG01.cpp">
+      <Filter>Source Files\Model\Protein</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Simulation\MutationProcess.cpp">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Simulation\NonHomogeneousSequenceSimulator.cpp">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-phyl\src\Bpp\Phyl\Simulation\SequenceSimulationTools.cpp">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

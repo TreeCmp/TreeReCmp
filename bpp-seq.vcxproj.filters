@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Container">
+      <UniqueIdentifier>{31a04326-d840-4c6b-b2a5-86693ca6b12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Alphabet">
+      <UniqueIdentifier>{48b02d33-f88e-414c-a1f7-17ff368fda8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Alphabet">
+      <UniqueIdentifier>{21efbee2-e72d-4513-a359-0b7385e02e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AlphabetIndex">
+      <UniqueIdentifier>{32f7bc16-f671-486d-915a-a3e8e2b3d4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{37754cc7-eee8-42a4-8e67-8688826ded06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GeneticCode">
+      <UniqueIdentifier>{e11a086a-a0c0-45c9-a900-68daec8a5019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Io">
+      <UniqueIdentifier>{2b54fc0b-0b1e-4982-8b4e-26cbfeae671d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Container">
+      <UniqueIdentifier>{863c74e1-50a8-4b13-b755-6417166ec5e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GeneticCode">
+      <UniqueIdentifier>{23343130-9379-41a4-a4b1-ce45ad5fb072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Io">
+      <UniqueIdentifier>{d4dcf11d-b93d-436b-913d-4fa0623cf3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{9901f1df-4da5-435a-a3ed-e84a30dd2fcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AlphabetIndex">
+      <UniqueIdentifier>{cff9b167-7062-45a9-9f84-68a53c64a080}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\NexusTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\DistanceMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\CodonSiteTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\CoreSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\CoreSite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\DNAToRNA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\NucleicAcidsReplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequencePositionIterators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWalker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotationTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithQuality.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithQualityTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Site.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SiteExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SiteIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SiteTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\StringSequenceTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SymbolList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SymbolListTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Transliterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\AbstractSequenceContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\AlignedSequenceContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\CompressedVectorSiteContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\MapSequenceContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\OrderedSequenceContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerExceptions.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerIterator.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerTools.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerExceptions.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerIterator.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerTools.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\VectorSequenceContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\VectorSiteContainer.h">
+      <Filter>Header Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AbstractAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\Alphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetExceptions.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetNumericState.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetState.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetTools.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\BinaryAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\CaseMaskedAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\CodonAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\DefaultAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\DNA.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\IntegerAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\LetterAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\LexicalAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\NucleicAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\NucleicAlphabetState.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\NumericAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\ProteicAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\ProteicAlphabetState.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\RNA.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\RNY.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\WordAlphabet.h">
+      <Filter>Header Files\Alphabet</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChargeIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChenGuHuangHydrophobicityIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChouFasmanAHelixIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChouFasmanBSheetIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChouFasmanTurnIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex1Entry.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex2Entry.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAMassIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASEA1030Index.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASEAInf10Index.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASEASup30Index.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASurfaceIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAVolumeIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AlphabetIndex1.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AlphabetIndex2.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\BLOSUM50.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\DefaultNucleotideScore.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAChemicalDistance.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAPolarityIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAVolumeIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\KleinAANetChargeIndex.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\MiyataAAChemicalDistance.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\SimpleIndexDistance.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\SimpleScore.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\UserAlphabetIndex1.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\UserAlphabetIndex2.h">
+      <Filter>Header Files\AlphabetIndex</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\App\SequenceApplicationTools.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\AscidianMitochondrialGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\CiliateNuclearGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\EchinodermMitochondrialGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\GeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\InvertebrateMitochondrialGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\MoldMitochondrialGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\StandardGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\VertebrateMitochondrialGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\YeastMitochondrialGeneticCode.h">
+      <Filter>Header Files\GeneticCode</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractIAlignment.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractISequence.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractOAlignment.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractOSequence.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentReaderFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentWriterFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex1Format.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex2Format.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceReaderFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceStreamReaderFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceWriterFormat.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Clustal.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Dcse.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Fasta.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\GenBank.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\IoSequence.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\IoSequenceFactory.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\IoSequenceStream.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\ISequence.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\ISequenceStream.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Mase.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\MaseTools.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\NexusIoSequence.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\OSequence.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\OSequenceStream.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\PhredPhd.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\PhredPoly.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Phylip.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\SequenceFileIndex.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Stockholm.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\StreamSequenceIterator.h">
+      <Filter>Header Files\Io</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\NexusTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\DistanceMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceExceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequencePositionIterators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotationTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithQuality.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithQualityTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\CodonSiteTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\DNAToRNA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\NucleicAcidsReplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Site.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SiteExceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SiteTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\StringSequenceTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SymbolList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SymbolListTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Transliterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\AbstractSequenceContainer.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\AlignedSequenceContainer.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\CompressedVectorSiteContainer.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\MapSequenceContainer.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerIterator.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerTools.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerExceptions.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerIterator.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerTools.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\VectorSequenceContainer.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\VectorSiteContainer.cpp">
+      <Filter>Source Files\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\AbstractAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetExceptions.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetTools.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\BinaryAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\CaseMaskedAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\CodonAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\DefaultAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\DNA.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\IntegerAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\LetterAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\LexicalAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\NumericAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\ProteicAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\RNA.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\RNY.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\WordAlphabet.cpp">
+      <Filter>Source Files\Alphabet</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex1Entry.cpp">
+      <Filter>Source Files\AlphabetIndex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex2Entry.cpp">
+      <Filter>Source Files\AlphabetIndex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\BLOSUM50.cpp">
+      <Filter>Source Files\AlphabetIndex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\DefaultNucleotideScore.cpp">
+      <Filter>Source Files\AlphabetIndex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAChemicalDistance.cpp">
+      <Filter>Source Files\AlphabetIndex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\MiyataAAChemicalDistance.cpp">
+      <Filter>Source Files\AlphabetIndex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\SimpleScore.cpp">
+      <Filter>Source Files\AlphabetIndex</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\App\SequenceApplicationTools.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\AscidianMitochondrialGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\CiliateNuclearGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\EchinodermMitochondrialGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\GeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\InvertebrateMitochondrialGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\MoldMitochondrialGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\StandardGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\VertebrateMitochondrialGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\YeastMitochondrialGeneticCode.cpp">
+      <Filter>Source Files\GeneticCode</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentReaderFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentWriterFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex1Format.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex2Format.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceReaderFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceStreamReaderFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceWriterFormat.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Clustal.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Dcse.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Fasta.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\GenBank.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\IoSequenceFactory.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Mase.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\MaseTools.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\NexusIoSequence.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\PhredPhd.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\PhredPoly.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Phylip.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Stockholm.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\StreamSequenceIterator.cpp">
+      <Filter>Source Files\Io</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

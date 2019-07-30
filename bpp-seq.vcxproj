@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{854E33F1-841A-4FB9-A584-A1E23FA7D2CD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bppseq</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>bpp-core/src/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>bpp-core/src/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChargeIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChenGuHuangHydrophobicityIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChouFasmanAHelixIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChouFasmanBSheetIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAChouFasmanTurnIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex1Entry.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex2Entry.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAMassIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASEA1030Index.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASEAInf10Index.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASEASup30Index.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AASurfaceIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAVolumeIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AlphabetIndex1.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AlphabetIndex2.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\BLOSUM50.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\DefaultNucleotideScore.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAChemicalDistance.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAPolarityIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAVolumeIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\KleinAANetChargeIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\MiyataAAChemicalDistance.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\SimpleIndexDistance.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\SimpleScore.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\UserAlphabetIndex1.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\UserAlphabetIndex2.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AbstractAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\Alphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetExceptions.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetNumericState.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetState.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\BinaryAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\CaseMaskedAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\CodonAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\DefaultAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\DNA.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\IntegerAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\LetterAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\LexicalAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\NucleicAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\NucleicAlphabetState.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\NumericAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\ProteicAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\ProteicAlphabetState.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\RNA.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\RNY.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Alphabet\WordAlphabet.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\App\SequenceApplicationTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\CodonSiteTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\AbstractSequenceContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\AlignedSequenceContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\CompressedVectorSiteContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\MapSequenceContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\OrderedSequenceContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerExceptions.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerIterator.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerExceptions.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerIterator.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\VectorSequenceContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Container\VectorSiteContainer.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\CoreSequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\CoreSite.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\DistanceMatrix.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\DNAToRNA.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\AscidianMitochondrialGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\CiliateNuclearGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\EchinodermMitochondrialGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\GeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\InvertebrateMitochondrialGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\MoldMitochondrialGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\StandardGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\VertebrateMitochondrialGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\GeneticCode\YeastMitochondrialGeneticCode.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractIAlignment.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractISequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractOAlignment.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\AbstractOSequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentReaderFormat.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentWriterFormat.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex1Format.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex2Format.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceReaderFormat.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceStreamReaderFormat.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceWriterFormat.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Clustal.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Dcse.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Fasta.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\GenBank.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\IoSequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\IoSequenceFactory.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\IoSequenceStream.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\ISequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\ISequenceStream.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Mase.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\MaseTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\NexusIoSequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\NexusTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\OSequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\OSequenceStream.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\PhredPhd.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\PhredPoly.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Phylip.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\SequenceFileIndex.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\Stockholm.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Io\StreamSequenceIterator.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\NucleicAcidsReplication.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Sequence.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceExceptions.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceIterator.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequencePositionIterators.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWalker.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotation.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotationTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithQuality.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SequenceWithQualityTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Site.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SiteExceptions.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SiteIterator.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SiteTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\StringSequenceTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SymbolList.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\SymbolListTools.h" />
+    <ClInclude Include="bpp-seq\src\Bpp\Seq\Transliterator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex1Entry.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\AAIndex2Entry.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\BLOSUM50.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\DefaultNucleotideScore.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\GranthamAAChemicalDistance.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\MiyataAAChemicalDistance.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\AlphabetIndex\SimpleScore.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\AbstractAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetExceptions.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\AlphabetTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\BinaryAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\CaseMaskedAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\CodonAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\DefaultAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\DNA.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\IntegerAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\LetterAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\LexicalAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\NumericAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\ProteicAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\RNA.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\RNY.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Alphabet\WordAlphabet.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\App\SequenceApplicationTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\CodonSiteTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\AbstractSequenceContainer.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\AlignedSequenceContainer.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\CompressedVectorSiteContainer.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\MapSequenceContainer.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerIterator.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SequenceContainerTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerExceptions.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerIterator.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\SiteContainerTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\VectorSequenceContainer.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Container\VectorSiteContainer.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\DistanceMatrix.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\DNAToRNA.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\AscidianMitochondrialGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\CiliateNuclearGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\EchinodermMitochondrialGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\GeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\InvertebrateMitochondrialGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\MoldMitochondrialGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\StandardGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\VertebrateMitochondrialGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\GeneticCode\YeastMitochondrialGeneticCode.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentReaderFormat.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlignmentWriterFormat.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex1Format.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOAlphabetIndex2Format.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceReaderFormat.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceStreamReaderFormat.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\BppOSequenceWriterFormat.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Clustal.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Dcse.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Fasta.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\GenBank.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\IoSequenceFactory.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Mase.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\MaseTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\NexusIoSequence.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\NexusTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\PhredPhd.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\PhredPoly.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Phylip.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\Stockholm.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Io\StreamSequenceIterator.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\NucleicAcidsReplication.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Sequence.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceExceptions.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequencePositionIterators.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWalker.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotation.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithAnnotationTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithQuality.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SequenceWithQualityTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Site.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SiteExceptions.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SiteTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\StringSequenceTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SymbolList.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\SymbolListTools.cpp" />
+    <ClCompile Include="bpp-seq\src\Bpp\Seq\Transliterator.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

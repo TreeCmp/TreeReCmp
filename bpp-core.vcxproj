@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C8FCA2C0-94B7-4064-B328-A4073DBFFD26}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bppcore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bpp-core\src\Bpp\App\ApplicationTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\App\BppApplication.h" />
+    <ClInclude Include="bpp-core\src\Bpp\App\NumCalcApplicationTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\BppBoolean.h" />
+    <ClInclude Include="bpp-core\src\Bpp\BppString.h" />
+    <ClInclude Include="bpp-core\src\Bpp\BppVector.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Clonable.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Exceptions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\AbstractGraphicDevice.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\ColorManager.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\ColorSet.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\ColorTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\DefaultColorSet.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Fig\XFigGraphicDevice.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Fig\XFigLaTeXFontManager.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Fig\XFigPostscriptFontManager.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Font\Font.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Font\FontManager.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\GraphicDevice.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Latex\DvipsColorSet.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Latex\PgfGraphicDevice.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Molscript\MolscriptColorSet.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Point2D.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Point2DTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\RgbColor.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\R\RColorSet.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graphics\Svg\SvgGraphicDevice.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationDAGraphImplObserver.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationDAGraphObserver.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationGraphImplObserver.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationGraphObserver.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationTreeGraphImplObserver.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\AssociationTreeGraphObserver.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\DAGraph.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\DAGraphImpl.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\GlobalGraph.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\Graph.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\GraphObserver.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\TreeGraph.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Graph\TreeGraphImpl.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\BppODiscreteDistributionFormat.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\BppOParametrizableFormat.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\FileTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoDiscreteDistributionFactory.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoFormat.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\IoParametrizable.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Io\OutputStream.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AbstractParameterAliasable.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AbstractParametrizable.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AdaptiveKernelDensityEstimation.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\AutoParameter.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Constraints.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\DataTable.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\AbstractNumericalDerivative.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\AbstractOptimizer.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\BfgsMultiDimensions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\BrentOneDimension.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\ConjugateGradientMultiDimensions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\DirectionFunction.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\DownhillSimplexMethod.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\FivePointsNumericalDerivative.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\Functions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\FunctionTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\GoldenSectionSearch.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\MetaOptimizer.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\NewtonBacktrackOneDimension.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\NewtonOneDimension.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\OneDimensionOptimizationTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\OptimizationStopCondition.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\Optimizer.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\PowellMultiDimensions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\ReparametrizationFunctionWrapper.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\SimpleMultiDimensions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\SimpleNewtonMultiDimensions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\ThreePointsNumericalDerivative.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Function\TwoPointsNumericalDerivative.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\AbstractHmmTransitionMatrix.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\AutoCorrelationTransitionMatrix.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\FullHmmTransitionMatrix.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmEmissionProbabilities.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmExceptions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmLikelihood.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmStateAlphabet.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\HmmTransitionMatrix.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\LogsumHmmLikelihood.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\LowMemoryRescaledHmmLikelihood.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Hmm\RescaledHmmLikelihood.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\IntegerTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\EigenValue.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\LUDecomposition.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\Matrix.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Matrix\MatrixTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Number.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\NumConstants.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\NumTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Parameter.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParameterAliasable.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParameterExceptions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParameterList.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Parametrizable.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\ParametrizableCollection.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\AbstractDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\BetaDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\ConstantDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\DirichletDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\DiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\ExponentialDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\GammaDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\GaussianDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\InvariantMixedDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\MixtureOfDiscreteDistributions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\MultipleDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\SimpleDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\Simplex.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\TruncatedExponentialDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Prob\UniformDiscreteDistribution.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\ContingencyTableGenerator.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\RandomFactory.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\RandomTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\Uniform01K.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\Uniform01QD.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Random\Uniform01WH.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Range.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\ContingencyTableTest.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\Mva\CorrespondenceAnalysis.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\Mva\DualityDiagram.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\Mva\PrincipalComponentAnalysis.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\StatTest.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Stat\StatTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\Table.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\TableExceptions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\TransformedParameter.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\VectorExceptions.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Numeric\VectorTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Text\KeyvalTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Text\NestedStringTokenizer.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Text\StringTokenizer.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Text\TextTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Utils\AttributesTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Utils\MapTools.h" />
+    <ClInclude Include="bpp-core\src\Bpp\Version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bpp-core\src\Bpp\App\ApplicationTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\App\BppApplication.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\App\NumCalcApplicationTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\BppString.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Exceptions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\ColorTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Fig\XFigGraphicDevice.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Fig\XFigLaTeXFontManager.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Fig\XFigPostscriptFontManager.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Font\Font.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\GraphicDevice.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Latex\DvipsColorSet.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Latex\PgfGraphicDevice.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Molscript\MolscriptColorSet.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\R\RColorSet.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graphics\Svg\SvgGraphicDevice.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Graph\GlobalGraph.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Io\BppODiscreteDistributionFormat.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Io\BppOParametrizableFormat.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Io\FileTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Io\IoDiscreteDistributionFactory.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AbstractParameterAliasable.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AbstractParametrizable.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AdaptiveKernelDensityEstimation.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\AutoParameter.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\DataTable.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\AbstractOptimizer.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\BfgsMultiDimensions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\BrentOneDimension.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\ConjugateGradientMultiDimensions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\DirectionFunction.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\DownhillSimplexMethod.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\FivePointsNumericalDerivative.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\FunctionTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\GoldenSectionSearch.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\MetaOptimizer.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\NewtonBacktrackOneDimension.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\NewtonOneDimension.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\OneDimensionOptimizationTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\OptimizationStopCondition.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\PowellMultiDimensions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\ReparametrizationFunctionWrapper.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\SimpleMultiDimensions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\SimpleNewtonMultiDimensions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\ThreePointsNumericalDerivative.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Function\TwoPointsNumericalDerivative.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\AbstractHmmTransitionMatrix.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\AutoCorrelationTransitionMatrix.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\FullHmmTransitionMatrix.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\HmmLikelihood.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\LogsumHmmLikelihood.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\LowMemoryRescaledHmmLikelihood.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Hmm\RescaledHmmLikelihood.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\NumTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Parameter.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\ParameterExceptions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\ParameterList.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\AbstractDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\BetaDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\ConstantDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\DirichletDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\ExponentialDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\GammaDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\GaussianDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\InvariantMixedDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\MixtureOfDiscreteDistributions.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\SimpleDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\Simplex.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\TruncatedExponentialDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Prob\UniformDiscreteDistribution.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\ContingencyTableGenerator.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\RandomTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\Uniform01K.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\Uniform01QD.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Random\Uniform01WH.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\ContingencyTableTest.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\Mva\CorrespondenceAnalysis.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\Mva\DualityDiagram.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\Mva\PrincipalComponentAnalysis.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\Stat\StatTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Numeric\VectorTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Text\KeyvalTools.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Text\NestedStringTokenizer.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Text\StringTokenizer.cpp" />
+    <ClCompile Include="bpp-core\src\Bpp\Text\TextTools.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
