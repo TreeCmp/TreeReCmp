@@ -95,7 +95,7 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">PocoUtilmt</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
-    <OutDir>..\bin64\</OutDir>
+    <OutDir>..\x64\Debug\</OutDir>
     <IntDir>obj64\Util\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -140,7 +140,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <OutputFile>..\bin64\PocoUtil64d.dll</OutputFile>
+      <OutputFile>..\..\x64\Debug\PocoUtil64d.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>..\bin64\PocoUtil64d.pdb</ProgramDatabaseFile>

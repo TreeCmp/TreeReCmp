@@ -95,7 +95,7 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">PocoFoundationmt</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
-    <OutDir>..\bin64\</OutDir>
+    <OutDir>..\x64\Debug\</OutDir>
     <IntDir>obj64\Foundation\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -140,7 +140,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\bin64\PocoFoundation64d.dll</OutputFile>
+      <OutputFile>..\..\x64\Debug\PocoFoundation64d.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>..\bin64\PocoFoundation64d.pdb</ProgramDatabaseFile>
