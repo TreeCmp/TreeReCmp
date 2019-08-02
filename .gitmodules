@@ -10,3 +10,6 @@
 [submodule "googletest"]
 	path = googletest
 	url = https://github.com/google/googletest.git
+[submodule "poco"]
+	path = poco
+	url = https://github.com/pocoproject/poco.git
