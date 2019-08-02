@@ -155,6 +155,9 @@
     <ProjectReference Include="poco\Foundation_x64_vs150.vcxproj">
       <Project>{b01196cc-b693-4548-8464-2ff60499e73f}</Project>
     </ProjectReference>
+    <ProjectReference Include="poco\JSON_x64_vs150.vcxproj">
+      <Project>{0e7fe914-0690-3eb4-9119-93a97cc97741}</Project>
+    </ProjectReference>
     <ProjectReference Include="poco\Util_x64_vs150.vcxproj">
       <Project>{6ff56cdb-787a-4714-a28c-919003f9fa6c}</Project>
     </ProjectReference>
