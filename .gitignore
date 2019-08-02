@@ -22,3 +22,4 @@ test/gtest_main/x64/*
 treerecmp/Debug/*
 treerecmp/Release/*
 treerecmp/x64/*
+poco/*
