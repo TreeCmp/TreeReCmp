@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug_shared|x64">
+      <Configuration>debug_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static_md|x64">
+      <Configuration>debug_static_md</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static_mt|x64">
+      <Configuration>debug_static_mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_shared|x64">
+      <Configuration>release_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static_md|x64">
+      <Configuration>release_static_md</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static_mt|x64">
+      <Configuration>release_static_mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Foundation</ProjectName>
+    <ProjectGuid>{B01196CC-B693-4548-8464-2FF60499E73F}</ProjectGuid>
+    <RootNamespace>Foundation</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">PocoFoundation64d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">PocoFoundationmdd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">PocoFoundationmtd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">PocoFoundation64</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">PocoFoundationmd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">PocoFoundationmt</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <OutDir>..\bin64\</OutDir>
+    <IntDir>obj64\Foundation\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <OutDir>..\bin64\</OutDir>
+    <IntDir>obj64\Foundation\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">
+    <OutDir>..\lib64\</OutDir>
+    <IntDir>obj64\Foundation\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">
+    <OutDir>..\lib64\</OutDir>
+    <IntDir>obj64\Foundation\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">
+    <OutDir>..\lib64\</OutDir>
+    <IntDir>obj64\Foundation\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">
+    <OutDir>..\lib64\</OutDir>
+    <IntDir>obj64\Foundation\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\poco\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;Foundation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin64\PocoFoundation64d.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\bin64\PocoFoundation64d.pdb</ProgramDatabaseFile>
+      <AdditionalLibraryDirectories>..\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <ImportLibrary>..\lib64\PocoFoundationd.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;Foundation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin64\PocoFoundation64.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\lib64\PocoFoundation.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>..\lib64\PocoFoundationmtd.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\lib64\PocoFoundationmtd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\lib64\PocoFoundationmt.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>..\lib64\PocoFoundationmdd.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\lib64\PocoFoundationmdd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>..\lib64\PocoFoundationmd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\poco\Foundation\src\AbstractObserver.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ActiveDispatcher.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\adler32.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\ArchiveStrategy.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Ascii.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ASCIIEncoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\AsyncChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\AtomicCounter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Base32Decoder.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Base32Encoder.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Base64Decoder.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Base64Encoder.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\BinaryReader.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\BinaryWriter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Bugcheck.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ByteOrder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Channel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Checksum.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Checksum32.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Checksum64.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Clock.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\compress.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\Condition.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Configurable.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ConsoleChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\CountingStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\crc32.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\DateTime.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DateTimeFormat.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DateTimeFormatter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DateTimeParser.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Debugger.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\deflate.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\DeflatingStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DigestEngine.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DigestStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DirectoryIterator.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DirectoryIteratorStrategy.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\DirectoryIterator_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\DirectoryIterator_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\DirectoryWatcher.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Environment.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Environment_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Environment_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Error.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ErrorHandler.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Event.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\EventArgs.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\EventChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\EventLogChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Event_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Event_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Exception.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FIFOBufferStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\File.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FileChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FileStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FileStreamFactory.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FileStream_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\FileStream_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\File_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\File_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Format.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Formatter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FormattingChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Foundation.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FPEnvironment.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\FPEnvironment_C99.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\FPEnvironment_DEC.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\FPEnvironment_DUMMY.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\FPEnvironment_SUN.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\FPEnvironment_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Glob.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Hash.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\HashStatistic.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\HexBinaryDecoder.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\HexBinaryEncoder.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\infback.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\inffast.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\inflate.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\InflatingStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\inftrees.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\JSONString.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Latin1Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Latin2Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Latin9Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\LineEndingConverter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\LocalDateTime.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\LogFile.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\LogFile_STD.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\LogFile_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Logger.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\LoggingFactory.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\LoggingRegistry.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\LogStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Manifest.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\MD4Engine.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\MD5Engine.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\MemoryPool.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\MemoryStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Message.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Mutex.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Mutex_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Mutex_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\NamedEvent.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NamedEvent_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\NamedEvent_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\NamedMutex.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NamedMutex_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\NamedMutex_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\NestedDiagnosticContext.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Notification.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NotificationCenter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NotificationQueue.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NullChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NullStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NumberFormatter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NumberParser.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\NumericString.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Path.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Path_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Path_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\PatternFormatter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_byte_order.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_chartables.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_compile.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_config.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_dfa_exec.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_exec.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_fullinfo.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_get.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_globals.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_jit_compile.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_maketables.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_newline.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_ord2utf8.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_refcount.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_string_utils.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_study.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_tables.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_ucd.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_valid_utf8.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_version.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\pcre_xclass.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\Pipe.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\PipeImpl.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\PipeImpl_DUMMY.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\PipeImpl_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\PipeImpl_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\PipeStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\PriorityNotificationQueue.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Process.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Process_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Process_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\PurgeStrategy.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Random.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\RandomStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\RefCountedObject.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\RegularExpression.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\RotateStrategy.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Runnable.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\RWLock.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\RWLock_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\RWLock_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Semaphore.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Semaphore_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Semaphore_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SHA1Engine.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SHA2Engine.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SHA3Engine.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\BLAKE2Engine.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SharedLibrary.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SharedLibrary_HPUX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SharedLibrary_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SharedLibrary_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SharedMemory.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SharedMemory_DUMMY.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SharedMemory_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SharedMemory_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SignalHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\SimpleFileChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SortedDirectoryIterator.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SplitterChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Stopwatch.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\StreamChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\StreamConverter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\StreamCopier.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\StreamTokenizer.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\String.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\StringTokenizer.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SynchronizedObject.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\SyslogChannel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Task.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TaskManager.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TaskNotification.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TeeStream.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TemporaryFile.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TextBufferIterator.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TextConverter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TextEncoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\TextIterator.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Thread.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ThreadLocal.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ThreadPool.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\ThreadTarget.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Thread_POSIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Thread_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\TimedNotificationQueue.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Timer.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Timespan.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Timestamp.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Timezone.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Timezone_UNIX.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Timezone_WIN32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\poco\Foundation\src\Token.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\trees.c" />
+    <ClCompile Include="..\..\poco\Foundation\src\Unicode.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\UnicodeConverter.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\URI.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\URIStreamFactory.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\URIStreamOpener.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\UTF16Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\UTF32Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\UTF8Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\UTF8String.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\UUID.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\UUIDGenerator.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Var.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\VarHolder.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\VarIterator.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Void.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Windows1250Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Windows1251Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\Windows1252Encoding.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\WindowsConsoleChannel.cpp" />
+    <ClCompile Include="..\..\poco\Foundation\src\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AbstractCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AbstractDelegate.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AbstractEvent.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AbstractObserver.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AbstractPriorityDelegate.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AbstractStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AccessExpirationDecorator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AccessExpireCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AccessExpireLRUCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AccessExpireStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ActiveDispatcher.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ActiveMethod.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ActiveResult.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ActiveRunnable.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ActiveStarter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Activity.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Any.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ArchiveStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Ascii.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ASCIIEncoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AsyncChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AtomicCounter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AutoPtr.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\AutoReleasePool.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Base32Decoder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Base32Encoder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Base64Decoder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Base64Encoder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\BasicEvent.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\BinaryReader.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\BinaryWriter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Buffer.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\BufferAllocator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\BufferedBidirectionalStreamBuf.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\BufferedStreamBuf.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Bugcheck.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ByteOrder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Channel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Checksum.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Checksum32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Checksum64.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ChecksumImpl.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ClassLibrary.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ClassLoader.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Clock.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Condition.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Config.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Configurable.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ConsoleChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\CountingStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DateTime.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DateTimeFormat.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DateTimeFormatter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DateTimeParser.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Debugger.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DefaultStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DeflatingStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Delegate.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DigestEngine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DigestStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DirectoryIterator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DirectoryIteratorStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DirectoryIterator_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DirectoryIterator_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DirectoryWatcher.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DynamicAny.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DynamicAnyHolder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\DynamicFactory.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Dynamic\Pair.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Dynamic\Struct.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Dynamic\Var.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Dynamic\VarHolder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Dynamic\VarIterator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Environment.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Environment_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Environment_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Error.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ErrorHandler.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Event.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\EventArgs.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\EventChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\EventLogChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Event_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Event_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Exception.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ExpirationDecorator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Expire.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ExpireCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ExpireLRUCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ExpireStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FIFOBuffer.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FIFOEvent.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FIFOStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\File.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FileChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FileStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FileStreamFactory.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FileStream_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FileStream_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\File_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\File_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Format.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Formatter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FormattingChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Foundation.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FPEnvironment.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FPEnvironment_C99.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FPEnvironment_DEC.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FPEnvironment_DUMMY.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FPEnvironment_SUN.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FPEnvironment_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FunctionDelegate.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\FunctionPriorityDelegate.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Glob.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Hash.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HashFunction.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HashMap.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HashSet.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HashStatistic.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HashTable.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HexBinaryDecoder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HexBinaryEncoder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\HMACEngine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\InflatingStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Instantiator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\JSONString.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\KeyValueArgs.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Latin1Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Latin2Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Latin9Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LinearHashTable.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LineEndingConverter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ListMap.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LocalDateTime.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LogFile.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LogFile_STD.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LogFile_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Logger.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LoggingFactory.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LoggingRegistry.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LogStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LRUCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\LRUStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\MakeUnique.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Manifest.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\MD4Engine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\MD5Engine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\MemoryPool.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\MemoryStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Message.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\MetaObject.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\MetaProgramming.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Mutex.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Mutex_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Mutex_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NamedEvent.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NamedEvent_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NamedEvent_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NamedMutex.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NamedMutex_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NamedMutex_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NamedTuple.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NestedDiagnosticContext.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NObserver.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Notification.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NotificationCenter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NotificationQueue.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NotificationStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Nullable.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NullChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NullStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NumberFormatter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NumberParser.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\NumericString.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ObjectPool.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Observer.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Optional.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Path.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Path_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Path_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PatternFormatter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PBKDF2Engine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Pipe.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PipeImpl.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PipeImpl_DUMMY.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PipeImpl_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PipeImpl_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PipeStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Platform.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Platform_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Platform_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Poco.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PriorityDelegate.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PriorityEvent.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PriorityExpire.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PriorityNotificationQueue.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PriorityStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Process.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Process_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Process_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\PurgeStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Random.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RandomStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RecursiveDirectoryIterator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RecursiveDirectoryIteratorImpl.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RefCountedObject.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RegularExpression.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RotateStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Runnable.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RunnableAdapter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RWLock.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RWLock_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\RWLock_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ScopedLock.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ScopedUnlock.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Semaphore.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Semaphore_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Semaphore_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SHA1Engine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SHA2Engine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SHA3Engine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\BLAKE2Engine.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedLibrary.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedLibrary_HPUX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedLibrary_UNIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedLibrary_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedMemory.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedMemory_DUMMY.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedMemory_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedMemory_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SharedPtr.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SignalHandler.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SimpleFileChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SimpleHashTable.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SingletonHolder.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SortedDirectoryIterator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SplitterChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Stopwatch.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\StrategyCollection.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\StreamChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\StreamConverter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\StreamCopier.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\StreamTokenizer.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\StreamUtil.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\String.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\StringTokenizer.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SynchronizedObject.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\SyslogChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Task.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TaskManager.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TaskNotification.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TeeStream.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TemporaryFile.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TextBufferIterator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TextConverter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TextEncoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TextIterator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Thread.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ThreadLocal.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ThreadPool.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ThreadTarget.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Thread_POSIX.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Thread_WIN32.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TimedNotificationQueue.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Timer.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Timespan.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Timestamp.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Timezone.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Token.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Tuple.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\TypeList.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Types.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UnbufferedStreamBuf.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Unicode.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UnicodeConverter.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UniqueAccessExpireCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UniqueAccessExpireLRUCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UniqueAccessExpireStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UniqueExpireCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UniqueExpireLRUCache.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UniqueExpireStrategy.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UnWindows.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\URI.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\URIStreamFactory.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\URIStreamOpener.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UTF16Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UTF32Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UTF8Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UTF8String.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UUID.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\UUIDGenerator.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\ValidArgs.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Version.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Void.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Windows1250Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Windows1251Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\Windows1252Encoding.h" />
+    <ClInclude Include="..\..\poco\Foundation\include\Poco\WindowsConsoleChannel.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\crc32.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\deflate.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\inffast.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\inffixed.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\inflate.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\inftrees.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\pcre.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\pcre_config.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\pcre_internal.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\pocomsg.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\trees.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\ucp.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\zconf.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\zlib.h" />
+    <ClInclude Include="..\..\poco\Foundation\src\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\poco\Foundation\src\pocomsg.mc">
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">mc -h "%(RootDir)%(Directory)." -r "%(RootDir)%(Directory)." "%(FullPath)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">%(RootDir)%(Directory)\pocomsg.rc;%(RootDir)%(Directory)\pocomsg.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">mc -h "%(RootDir)%(Directory)." -r "%(RootDir)%(Directory)." "%(FullPath)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">%(RootDir)%(Directory)\pocomsg.rc;%(RootDir)%(Directory)\pocomsg.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">mc -h "%(RootDir)%(Directory)." -r "%(RootDir)%(Directory)." "%(FullPath)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">%(RootDir)%(Directory)\pocomsg.rc;%(RootDir)%(Directory)\pocomsg.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">mc -h "%(RootDir)%(Directory)." -r "%(RootDir)%(Directory)." "%(FullPath)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">%(RootDir)%(Directory)\pocomsg.rc;%(RootDir)%(Directory)\pocomsg.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">mc -h "%(RootDir)%(Directory)." -r "%(RootDir)%(Directory)." "%(FullPath)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">%(RootDir)%(Directory)\pocomsg.rc;%(RootDir)%(Directory)\pocomsg.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">mc -h "%(RootDir)%(Directory)." -r "%(RootDir)%(Directory)." "%(FullPath)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">%(RootDir)%(Directory)\pocomsg.rc;%(RootDir)%(Directory)\pocomsg.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\DLLVersion.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='debug_static_mt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_md|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='release_static_mt|x64'">true</ExcludedFromBuild>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\poco\Foundation\src\pocomsg.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

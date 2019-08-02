@@ -108,7 +108,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>../poco/lib64/pocoUtild.lib;../poco/lib64/pocoFoundationd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib64/pocoUtild.lib;lib64/pocoFoundationd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -151,7 +151,10 @@
     <ClCompile Include="treerecmp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\poco\Util\Util_x64_vs150.vcxproj">
+    <ProjectReference Include="poco\Foundation_x64_vs150.vcxproj">
+      <Project>{b01196cc-b693-4548-8464-2ff60499e73f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="poco\Util_x64_vs150.vcxproj">
       <Project>{6ff56cdb-787a-4714-a28c-919003f9fa6c}</Project>
     </ProjectReference>
   </ItemGroup>

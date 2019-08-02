@@ -23,3 +23,13 @@ treerecmp/Debug/*
 treerecmp/Release/*
 treerecmp/x64/*
 poco/*
+treerecmp/bin/*
+treerecmp/lib/*
+treerecmp/bin64/*
+treerecmp/lib64/*
+treerecmp/Debug/*
+treerecmp/Release/*
+treerecmp/x64/*
+/treerecmp/poco/src*
+/treerecmp/poco/obj*
+/treerecmp/poco/obj64*
