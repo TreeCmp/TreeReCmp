@@ -161,6 +161,12 @@
     <ProjectReference Include="poco\Util_x64_vs150.vcxproj">
       <Project>{6ff56cdb-787a-4714-a28c-919003f9fa6c}</Project>
     </ProjectReference>
+    <ProjectReference Include="poco\XML_x64_vs150.vcxproj">
+      <Project>{9e211743-85fe-4977-82f3-4f04b40c912d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\config\config.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

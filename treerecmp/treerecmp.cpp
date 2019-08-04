@@ -1,8 +1,12 @@
-﻿#include <iostream>
+﻿#include <string>
+#include <iostream>
 #include <sstream>
+#include <fstream>
 #include "Poco/Util/Application.h"
 #include "Poco/Util/OptionProcessor.h"
 #include "Poco/Util/HelpFormatter.h"
+#include "Poco/XML/XMLStreamParser.h"
+#include "Poco/FileStream.h"
 
 using namespace std;
 using Poco::Util::Application;
@@ -11,7 +15,39 @@ using Poco::Util::OptionSet;
 using Poco::Util::OptionCallback;
 using Poco::Util::OptionProcessor;
 using Poco::Util::HelpFormatter;
+using namespace Poco::XML;
 
+struct DistDesc {
+
+	DistDesc() : _rooted(false) { }
+
+public:
+	string _name;
+	string _command_name;
+	string _method_name;
+	string _description;
+	string _unif_data;
+	string _yule_data;
+	string _aln_file_suffix;
+	string _fullname;
+	string _complexity;
+	string _authors;
+	string _publication;
+	string _year;
+	string _full_description;
+	bool _rooted;
+};
+
+enum class ConfigElementType
+{
+	name,
+	command_name,
+	method_name
+};
+
+constexpr unsigned int switchHash(const char *s, int off = 0) {
+	return !s[off] ? 5381 : (switchHash(s, off + 1) * 33) ^ s[off];
+}
 
 class TreeReCmpApp : public Application
 {
@@ -19,6 +55,76 @@ class TreeReCmpApp : public Application
 public:
 	TreeReCmpApp() : _helpRequested(false)
 	{
+		string configFilePath = "..\\config\\config.xml";
+
+		Poco::FileInputStream istr(configFilePath);
+		vector<DistDesc>distances;
+
+		XMLStreamParser confParser(istr, "config_parser", XMLStreamParser::RECEIVE_ELEMENTS | XMLStreamParser::RECEIVE_CHARACTERS);
+		//WhitespaceFilter wsf(confParser);
+		try {
+			while (confParser.next() != XMLStreamParser::EV_EOF) {
+				if (confParser.peek() == XMLStreamParser::EV_START_ELEMENT && (confParser.localName().compare(0, 6,"metric") == 0)) {
+					DistDesc cet;
+					string elementXML;
+					while (!(confParser.next() == XMLStreamParser::EV_END_ELEMENT && (confParser.localName().compare("metric") == 0))) {
+						if (confParser.peek() == XMLStreamParser::EV_CHARACTERS && !all_of(confParser.value().begin(), confParser.value().end(), isspace)) {
+							elementXML = confParser.localName();
+							switch (switchHash(elementXML.c_str())) {
+							case switchHash("name"):
+								cet._name = confParser.value();
+								break;
+							case switchHash("command_name"):
+								cet._command_name = confParser.value();
+								break;
+							case switchHash("method_name"):
+								cet._method_name = confParser.value();
+								break;
+							case switchHash("description"):
+								cet._description = confParser.value();
+								break;
+							case switchHash("unif_data"):
+								cet._unif_data = confParser.value();
+								break;
+							case switchHash("yule_data"):
+								cet._yule_data = confParser.value();
+								break;
+							case switchHash("aln_file_suffix"):
+								cet._aln_file_suffix = confParser.value();
+								break;
+							case switchHash("fullname"):
+								cet._fullname = confParser.value();
+								break;
+							case switchHash("complexity"):
+								cet._complexity = confParser.value();
+								break;
+							case switchHash("authors"):
+								cet._authors = confParser.value();
+								break;
+							case switchHash("publication"):
+								cet._publication = confParser.value();
+								break;
+							case switchHash("year"):
+								cet._year = confParser.value();
+								break;
+							case switchHash("full_description"):
+								cet._full_description = confParser.value();
+								break;
+							case switchHash("rooted"):
+								cet._rooted = true;
+								break;
+							}
+						}						
+					}
+					distances.push_back(cet);
+				}				
+			}
+			
+		}
+		catch (XMLStreamParserException e) {
+			cout << "Error parsing configuration file: " << e.description() << endl;
+			exit(Application::EXIT_CONFIG);
+		}
 	}
 
 	void defineOptions(OptionSet& options)
@@ -70,7 +176,7 @@ public:
 		options.addOption(
 			Option("distance", "d", distInfo)
 			.required(true)
-			.repeatable(false)
+			.repeatable(true)
 			.argument(" distance"));
 		options.addOption(
 			Option("input", "i", "Specify an input trees file (required).")
@@ -123,11 +229,11 @@ public:
 
 	int main(const std::vector<std::string>& args)
 	{
-		//if (_helpRequested || args.empty())
-		//{
-		//	displayHelp();
-		//}
-		//else
+		if (_helpRequested || args.empty())
+		{
+			displayHelp();
+		}
+		else
 		{
 			Option distances = options().getOption("d");
 			stringstream msg;
@@ -143,6 +249,7 @@ public:
 
 private:
 	bool _helpRequested;
+	set<DistDesc> _distances;
 };
 
 POCO_APP_MAIN(TreeReCmpApp)
