@@ -24,4 +24,9 @@
       <Filter>Pliki zasobów</Filter>
     </Xml>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="input.newick">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+  </ItemGroup>
 </Project>

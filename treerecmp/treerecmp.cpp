@@ -7,6 +7,8 @@
 #include "Poco/Util/HelpFormatter.h"
 #include "Poco/XML/XMLStreamParser.h"
 #include "Poco/FileStream.h"
+#include "Bpp/Phyl/Io/Newick.h"
+#include "Bpp/Phyl/Tree.h"
 
 using namespace std;
 using Poco::Util::Application;
@@ -15,7 +17,12 @@ using Poco::Util::OptionSet;
 using Poco::Util::OptionCallback;
 using Poco::Util::OptionProcessor;
 using Poco::Util::HelpFormatter;
-using namespace Poco::XML;
+using Poco::XML::XMLStreamParser;
+using Poco::XML::XMLStreamParserException;
+using bpp::Node;
+using bpp::Tree;
+using bpp::TreeTemplate;
+using bpp::Newick;
 
 struct DistDesc {
 
@@ -283,23 +290,25 @@ public:
 				message += (addOpt + " ");
 			}
 			cout << message;
+			message += "\n";
 
 			//Reading trees
-			/*cout << "Scanning input file... " << flush;
+			cout << "Scanning input file... " << flush;
 			vector<TreeTemplate<Node> *> treesIn;
-			vector<TreeTemplate<Node> *> trees;
+			//vector<TreeTemplate<Node> *> trees;
 			Newick newickReader(false);
 			try {
-				newickReader.read(inFile, (vector<Tree *>&) (treesIn));
+				newickReader.read(_inFile, (vector<Tree *>&) (treesIn));
 			}
 			catch (exception& e) {
 				cout << "Error when reading trees. Application terminated.\n";
 				return 0;
 			}
-			cout << treesIn.size() << " trees found." << endl;*/
-			for (string distance : _chosenDistances) {
+			cout << treesIn.size() << " trees found." << endl;
+
+			/*for (string distance : _chosenDistances) {
 				
-			}
+			}*/
 		}
 		return Application::EXIT_OK;
 	}

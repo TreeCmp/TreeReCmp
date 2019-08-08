@@ -90,7 +90,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>bpp-core/src/;bpp-seq/src/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>bpp-core/src/;bpp-seq/src/;bpp-phyl/src/</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
       <LanguageStandard>
       </LanguageStandard>

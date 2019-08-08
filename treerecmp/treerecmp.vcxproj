@@ -104,7 +104,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\poco\Util\include;..\poco\Foundation\include;..\poco\XML\include;..\poco\JSON\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\bpp-core\src\;..\bpp-seq\src\;..\bpp-phyl\src\;..\poco\Util\include;..\poco\Foundation\include;..\poco\XML\include;..\poco\JSON\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,6 +152,15 @@
     <ClCompile Include="treerecmp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\bpp-core.vcxproj">
+      <Project>{c8fca2c0-94b7-4064-b328-a4073dbffd26}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\bpp-phyl.vcxproj">
+      <Project>{5b763fef-c659-4593-835f-49812c9696dd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\bpp-seq.vcxproj">
+      <Project>{854e33f1-841a-4fb9-a584-a1e23fa7d2cd}</Project>
+    </ProjectReference>
     <ProjectReference Include="poco\Foundation_x64_vs150.vcxproj">
       <Project>{b01196cc-b693-4548-8464-2ff60499e73f}</Project>
     </ProjectReference>
@@ -167,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\config\config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="input.newick" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
