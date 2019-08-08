@@ -1,0 +1,514 @@
+8,9c8
+< This software is a computer program whose purpose is to provide classes
+< for phylogenetic data analysis.
+---
+>    Copyright or © or Copr. Bio++ Development Team, (November 16, 2004)
+11,23c10,11
+< This program is free software: you can redistribute it and/or modify
+< it under the terms of the GNU General Public License as published by
+< the Free Software Foundation, either version 3 of the License, or
+< (at your option) any later version.
+< 
+< This program is distributed in the hope that it will be useful,
+< but WITHOUT ANY WARRANTY; without even the implied warranty of
+< MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+< GNU General Public License for more details.
+< 
+< You should have received a copy of the GNU General Public License
+< along with this program.  If not, see <http://www.gnu.org/licenses/>.
+< */
+---
+>    This software is a computer program whose purpose is to provide classes
+>    for phylogenetic data analysis.
+25,26c13,34
+< #ifndef PARTITIONING_H
+< #define	PARTITIONING_H
+---
+>    This software is governed by the CeCILL  license under French law and
+>    abiding by the rules of distribution of free software.  You can  use,
+>    modify and/ or redistribute the software under the terms of the CeCILL
+>    license as circulated by CEA, CNRS and INRIA at the following URL
+>    "http://www.cecill.info".
+> 
+>    As a counterpart to the access to the source code and  rights to copy,
+>    modify and redistribute granted by the license, users are provided only
+>    with a limited warranty  and the software's author,  the holder of the
+>    economic rights,  and the successive licensors  have only  limited
+>    liability.
+> 
+>    In this respect, the user's attention is drawn to the risks associated
+>    with loading,  using,  modifying and/or developing or reproducing the
+>    software by the user in light of its specific status of free software,
+>    that may mean  that it is complicated to manipulate,  and  that  also
+>    therefore means  that it is reserved for developers  and  experienced
+>    professionals having in-depth computer knowledge. Users are therefore
+>    encouraged to load and test the software's suitability as regards their
+>    requirements in conditions enabling the security of their systems and/or
+>    data to be ensured and,  more generally, to use and operate it in the
+>    same conditions as regards security.
+28c36,47
+< #include <Phyl/TreeTemplate.h>
+---
+>    The fact that you are presently reading this means that you have had
+>    knowledge of the CeCILL license and that you accept its terms.
+>  */
+> 
+> #ifndef _PARTITIONING_H_
+> #define _PARTITIONING_H_
+> 
+> #include "PartitionList.h"
+> #include "../TreeTemplate.h"
+> //#include "../BipartitionList.h"
+> 
+> //From the STL:
+31,34d49
+< #include <Phyl/BipartitionList.h>
+< #include "PartitionList.h"
+< using namespace std;
+< using namespace bpp;
+36,42c51,56
+< namespace tools {
+< /**
+<  * @brief Interface for operationg on two description elements.\n
+<  * A description element is a piece of information about topology of a tree,
+<  * for example, it can be a branch, split or cluster in some phylogenetic
+<  * tree description.
+<  */    
+---
+> //From bpp-core:
+> #include <Bpp/Numeric/Matrix/Matrix.h>
+> 
+> namespace bpp
+> {
+> 
+44c58,61
+< {    
+---
+> {
+> public:
+>   virtual ~ITwoTreesDescriptionElements() {}
+> 
+46,58c63,75
+<     /**
+<      * @brief Counts a cost matrix and reverses its values:
+<      * - cost is the distance between a pair of splits where the pair incldes
+<      * one split from T1 and one from T2.
+<      * - each finally returned in the cost matrix value equals (maxCost - value).
+<      * This is done to find minimum weight perfect matching by a Hungarian (Maximum
+<      * Weight Perfect Matching) algorithm.
+<      *
+<      * O(n^3) == O(n^2*countDistance complexity)
+<      * @param costMatrix - a matrix that would store the result.
+<      */
+<     virtual int getCostMatrix(int** costMatrix) = 0;
+<     virtual int getSize() = 0;
+---
+>   /**
+>    * @brief Counts a cost matrix and reverses its values:
+>    * - cost is the distance between a pair of splits where the pair incldes
+>    * one split from T1 and one from T2.
+>    * - each finally returned in the cost matrix value equals (maxCost - value).
+>    * This is done to find minimum weight perfect matching by a Hungarian (Maximum
+>    * Weight Perfect Matching) algorithm.
+>    *
+>    * O(n^3) == O(n^2*countDistance complexity)
+>    * @param costMatrix - a matrix that would store the result.
+>    */
+>   virtual int getCostMatrix(Matrix<int>& costMatrix) = 0;
+>   virtual int getSize() = 0;
+60,61c77,78
+<     virtual int fixReversedWeightsSum(int sum) = 0;
+<     virtual void getCostReversedMatrix(vector<vector<int> >& costMatrix) = 0;
+---
+>   virtual int fixReversedWeightsSum(int sum) = 0;
+>   virtual void getCostReversedMatrix(Matrix<int>& costMatrix) = 0;
+63,67c80,82
+< /****************************k-leaves Subsets*************************/
+< /**
+<  * @brief Abstract class for operating on two description elements, where a description
+<  * element is a subset of leaves with specified size.\n
+<  */  
+---
+> 
+> /****************************NodalLeaves*************************/
+> 
+70,71c85,89
+< protected:   
+<     class LeavesList
+---
+> protected:
+>   class LeavesList
+>   {
+> private:
+>     struct Element
+73,131c91,94
+<     private:
+<         struct Element
+<         {
+<         public:
+<             Element(int valIn)
+<             {
+<                 val = valIn;
+<                 next = NULL;
+<             }
+<             int val;
+<             Element* next;
+<         };
+< 
+<         Element* first;
+<         Element* last;
+<         int listSize;
+<         Element* iterator;
+<     public:
+<         LeavesList(int val)
+<         {
+<             first = new Element(val);
+<             last = first;
+<             listSize = 1;
+<         }
+<         ~LeavesList()
+<         {
+<             Element* el = first;
+<             while (el != NULL) {
+<                 Element* elNext = el->next;
+<                 delete el;
+<                 el = elNext;
+<             }
+<             delete el;
+<         }
+<         int size()
+<         {
+<             return listSize;
+<         }
+<         void concat(LeavesList* other)
+<         {
+<             last->next = other->first;
+<             last = other->last;
+<             listSize += other->size();
+<         }
+<         void resetIteration()
+<         {
+<             iterator = first;
+<         }
+<         int nextId()
+<         {
+<             if (iterator == NULL) throw Exception("LeavesList's iterator out of range");
+<             int val = iterator->val;
+<             iterator = iterator->next;
+<             return val;
+<         }
+<         bool iterationFinished()
+<         {
+<             return iterator == NULL;
+<         }
+---
+> public:
+>       Element(int valIn): val(valIn), next(0) {}
+>       int val;
+>       Element* next;
+133,141c96,173
+<     // Matrices of size: number of leaves. They keep the internal node's generational indice.
+<     // The splitNode1[i][j] informs what is the generational index and level in the tree1
+<     // at which two leaves of id i and j split. 
+<     // A generational index is a value 0..inNodesNum-1 assigned to n internal node during browseTree.
+<     // It has no other usage than to be the smallest possible distinctive internal node description.
+<     vector<vector<int> > splitNode1;        
+<     vector<vector<int> > splitNode2;        
+<     int inNodesNum;                 // the number internal nodes
+<     int leavesNum;
+---
+> 
+>     Element* first_;
+>     Element* last_;
+>     int listSize_;
+>     Element* iterator_;
+> 
+> public:
+>     LeavesList(int val): first_(new Element(val)), last_(), listSize_(1), iterator_(0)
+>     {
+>       last_ = first_;
+>     }
+>     virtual ~LeavesList()
+>     {
+>       Element* el = first_;
+>       while (el)
+>       {
+>         Element* elNext = el->next;
+>         delete el;
+>         el = elNext;
+>       }
+>       delete el;
+>     }
+> 
+>     LeavesList(const LeavesList& ll):
+>       first_(ll.first_),
+>       last_(ll.last_),
+>       listSize_(ll.listSize_),
+>       iterator_(ll.iterator_)
+>     {}
+> 
+>     LeavesList& operator=(const LeavesList& ll)
+>     {
+>       first_ = ll.first_;
+>       last_  = ll.last_;
+>       listSize_ = ll.listSize_;
+>       iterator_ = ll.iterator_;
+>       return *this;
+>     }
+> 
+> public:
+>     int size()
+>     {
+>       return listSize_;
+>     }
+>     void concat(LeavesList* other)
+>     {
+>       last_->next = other->first_;
+>       last_ = other->last_;
+>       listSize_ += other->size();
+>     }
+>     void resetIteration()
+>     {
+>       iterator_ = first_;
+>     }
+>     int nextId()
+>     {
+>       if (!iterator_) throw Exception("LeavesList::nextId(). LeavesList's iterator out of range");
+>       int val = iterator_->val;
+>       iterator_ = iterator_->next;
+>       return val;
+>     }
+>     bool iterationFinished()
+>     {
+>       return !iterator_;
+>     }
+>   };
+> 
+> private:
+>   // Matrices of size: number of leaves. They keep the internal node's generational indice.
+>   // The splitNode1[i][j] informs what is the generational index and level in the tree1
+>   // at which two leaves of id i and j split.
+>   // A generational index is a value 0..inNodesNum-1 assigned to n internal node during browseTree.
+>   // It has no other usage than to be the smallest possible distinctive internal node description.
+>   RowMatrix<int> splitNode1_;
+>   RowMatrix<int> splitNode2_;
+>   unsigned int inNodesNum_;                 // the number internal nodes
+>   unsigned int leavesNum_;
+> 
+143c175,178
+<     virtual int getCostMatrix(int** costMatrix) = 0; 
+---
+>   virtual int getCostMatrix(Matrix<int>& costMatrix) = 0;
+> 
+>   virtual void getCostReversedMatrix(Matrix<int>& costMatrix) = 0;
+>   virtual int fixReversedWeightsSum(int sum) = 0;
+145,146d179
+<     virtual void getCostReversedMatrix(vector<vector<int> >& costMatrix) = 0;
+<     virtual int fixReversedWeightsSum(int sum) = 0;
+148c181
+<     virtual LeavesList* browseTree(int rootId, const TreeTemplate<Node>& tr, int& rootIndex, vector<vector<int> >& splitNode) = 0;
+---
+>   virtual LeavesList* browseTree(int rootId, const TreeTemplate<Node>& tr, int& rootIndex, Matrix<int>& splitNode) = 0;
+151,154c184
+< /**
+<  * @brief Two description elements operations, where a description element is 
+<  * a two-elements subset of leaves with specified size.\n
+<  */
+---
+> 
+158,162c188,193
+<     PairLeavesSets(const TreeTemplate<Node> &tr1, const TreeTemplate<Node> &tr2);        
+<     int getSize();        
+<     int getCostMatrix(int** costMatrix); 
+<     void getCostReversedMatrix(vector<vector<int> >& costMatrix);        
+<     int fixReversedWeightsSum(int sum);        
+---
+>   PairLeavesSets(const TreeTemplate<Node> &tr1, const TreeTemplate<Node> &tr2);
+>   int getSize();
+>   int getCostMatrix(Matrix<int>& costMatrix);
+>   void getCostReversedMatrix(Matrix<int>& costMatrix);
+>   int fixReversedWeightsSum(int sum);
+> 
+164c195
+<     LeavesList* browseTree(int rootId, const TreeTemplate<Node>& tr, int& rootIndex, vector<vector<int> >& splitNode);
+---
+>   LeavesList* browseTree(int rootId, const TreeTemplate<Node>& tr, int& rootIndex, Matrix<int>& splitNode);
+167d197
+< 
+169,172d198
+< /**
+<  * @brief Abstract class for operating on two description elements, where a description
+<  * element is a subset of leaves that share a particular property.\n
+<  */
+176,179c202,207
+<     enum dummyFunType {
+<         GMS1,
+<         GMS2
+<     };
+---
+>   enum dummyFunType
+>   {
+>     GMS1,
+>     GMS2
+>   };
+> 
+181,182c209,211
+<     typedef int (Partitioning::*methodPtr)(int* bitBipart);
+<     methodPtr dummyFun;
+---
+>   typedef int (Partitioning::* methodPtr)(int* bitBipart);
+>   methodPtr dummyFun;
+> 
+184,226c213,255
+<     PartitionList *pl1;
+<     PartitionList *pl2;
+<     static const int BITS_IN_INT;
+<     vector<int *> largerBitList;
+<     vector<int *> smallerBitList;
+<     int taxonNum_or_MaxInt;
+<     int taxonsNumber;
+<     /**
+<      * @brief Each bipartition is a sequence of bits corresponding to the trees
+<      * the bipartitions come from. That trees have the same leaves set.
+<      * Bit position in both bipartitions corresponds to the same leaf.
+<      * In this way XORing both bipartitions data - we obtain the value which
+<      * number of bits is the number of leaves.
+<      * Lets A1|A2 denote a bipartition in treeA and B1|B2 denote a bipartition in treeB
+<      * According to Bogdanowicz "Comparing Phylometric Trees(...)"
+<      * the dist is 0.5 min{ |A1xorB1|+|A2xorB2|, |A1xorB2|+|A2xorB1| } which equals to
+<      *  min {|A1|+|B1|-2|A1&B1|, leavesSize - |A1|+|B1|-2|A1&B1|}
+<      *
+<      * @param bipA - the array of bits of (leavesSize / sizeof(int) + 1) size. If a bit
+<      * is set it means that a leaf that corresponds to the bit belongs to the bipartition.
+<      * @param bipB - the array of bits of (leavesSize / sizeof(int) + 1) size. If a bit
+<      * is set it means that a leaf that corresponds to the bit belongs to the bipartition.
+<      * @param leavesSize - the number of leaves of the tree bipartition bipA comes from which
+<      * is equal to the number leaves of the tree bipartition bipb comes from.
+<      *
+<      * @return The distance between bipA and bipB
+<      */
+<     virtual int countDistance(int *bitDescrEl1, int *bitDescrEl2) = 0;
+<     int dummyFunction1(int* unused);
+<     int dummyFunction2(int* bitBipart);
+<     void setInitFields(const TreeTemplate<Node>& tr1, dummyFunType d);
+<     /**
+<      * @brief Counting bits of a 32bit value. The variable-precision SWAR algorithm.
+<      * For delatis see http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel
+<      * @param val - the 32bit value of which the number of set bits is count.
+<      * @return The number of set bits
+<      */
+<     static int getNumberOfSetBits(int val)
+<     {
+<         val = val - ((val >> 1) & 0x55555555);
+<         val = (val & 0x33333333) + ((val >> 2) & 0x33333333);
+<         return ((val + (val >> 4) & 0xF0F0F0F) * 0x1010101) >> 24;
+<     }
+---
+>   static const int BITS_IN_INT;
+>   std::vector<int*> largerBitList_;
+>   std::vector<int*> smallerBitList_;
+>   unsigned int taxonNumOrMaxInt_;
+>   unsigned int taxonsNumber_;
+> 
+>   /**
+>    * @brief Each bipartition is a sequence of bits corresponding to the trees
+>    * the bipartitions come from. That trees have the same leaves set.
+>    * Bit position in both bipartitions corresponds to the same leaf.
+>    * In this way XORing both bipartitions data - we obtain the value which
+>    * number of bits is the number of leaves.
+>    * Lets A1|A2 denote a bipartition in treeA and B1|B2 denote a bipartition in treeB
+>    * According to Bogdanowicz "Comparing Phylometric Trees(...)"
+>    * the dist is 0.5 min{ |A1xorB1|+|A2xorB2|, |A1xorB2|+|A2xorB1| } which equals to
+>    *  min {|A1|+|B1|-2|A1&B1|, leavesSize - |A1|+|B1|-2|A1&B1|}
+>    *
+>    * @param bipA - the array of bits of (leavesSize / sizeof(int) + 1) size. If a bit
+>    * is set it means that a leaf that corresponds to the bit belongs to the bipartition.
+>    * @param bipB - the array of bits of (leavesSize / sizeof(int) + 1) size. If a bit
+>    * is set it means that a leaf that corresponds to the bit belongs to the bipartition.
+>    * @param leavesSize - the number of leaves of the tree bipartition bipA comes from which
+>    * is equal to the number leaves of the tree bipartition bipb comes from.
+>    *
+>    * @return The distance between bipA and bipB
+>    */
+>   virtual int countDistance(int* bitDescrEl1, int* bitDescrEl2) = 0;
+>   int dummyFunction1(int* unused);
+>   int dummyFunction2(int* bitBipart);
+>   void setDummyFunction(dummyFunType d);
+>   /**
+>    * @brief Counting bits of a 32bit value. The variable-precision SWAR algorithm.
+>    * For delatis see http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel
+>    * @param val - the 32bit value of which the number of set bits is count.
+>    * @return The number of set bits
+>    */
+>   static int getNumberOfSetBits(int val)
+>   {
+>     val = val - ((val >> 1) & 0x55555555);
+>     val = (val & 0x33333333) + ((val >> 2) & 0x33333333);
+>     return (((val + (val >> 4)) & 0xF0F0F0F) * 0x1010101) >> 24; //jdutheil on 24/01/12 added parentheses to remove a warning, please check...
+>   }
+> 
+228,232c257,260
+<     int fixReversedWeightsSum(int sum);
+<     void getCostReversedMatrix(vector<vector<int> >& costMatrix);        
+<     int getCostMatrix(int** costMatrix);
+<     int getSize();
+<     ~Partitioning();
+---
+>   int fixReversedWeightsSum(int sum);
+>   void getCostReversedMatrix(Matrix<int>& costMatrix);
+>   int getCostMatrix(Matrix<int>& costMatrix);
+>   int getSize();
+235,240c263
+< /**
+<  * @brief This class defines two description elements operations. Here the description
+<  * element is a subset of leaves called split (or bipartition): if we remove an edge 
+<  * from a tree then we divide it up into two components. A split is a set of 
+<  * leaves of one of those components.
+<  */
+---
+> 
+242a266,269
+> private:
+>   BipartitionList2 bpl1_;
+>   BipartitionList2 bpl2_;
+> 
+244c271,272
+<     Splitting(const TreeTemplate<Node>& tr1, const TreeTemplate<Node>& tr2, dummyFunType d = GMS2);
+---
+>   Splitting(const TreeTemplate<Node> &tr1, const TreeTemplate<Node> &tr2, dummyFunType d = GMS2);
+>   virtual ~Splitting() {}
+247c275
+<     int countDistance(int *bipA, int *bipB);
+---
+>   int countDistance(int* bipA, int* bipB);
+250,255c278
+< /**
+<  * @brief This class defines two description elements operations. Here the description
+<  * element is a subset of leaves called cluster: Given a rooted tree T, if we 
+<  * choose a one internal node v, then the set of leaves in T that are 
+<  * descendants of v (including v if it is a leaf) is called a cluster.
+<  */
+---
+> 
+257a281,284
+> private:
+>   ClusterList cl1_;
+>   ClusterList cl2_;
+> 
+259c286,288
+<     Clustering(const TreeTemplate<Node>& tr1, const TreeTemplate<Node>& tr2, dummyFunType d = GMS1);
+---
+>   Clustering(const TreeTemplate<Node> &tr1, const TreeTemplate<Node> &tr2, dummyFunType d = GMS1);
+>   virtual ~Clustering() {}
+> 
+261c290
+<     int countDistance(int *bipA, int *bipB);	
+---
+>   int countDistance(int* bipA, int* bipB);
+263a293
+> } // end of namespace bpp
+265,266c295
+< } // end of namespace
+< #endif	/* PARTITIONING_H */
+---
+> #endif  // _PARTITIONING_H_

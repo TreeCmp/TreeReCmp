@@ -9,6 +9,7 @@
 #include "Poco/FileStream.h"
 #include "Bpp/Phyl/Io/Newick.h"
 #include "Bpp/Phyl/Tree.h"
+#include "PhylotreeDist.h"
 
 using namespace std;
 using Poco::Util::Application;
@@ -45,29 +46,48 @@ public:
 	bool _rooted;
 };
 
-enum class ConfigElementType
-{
-	name,
-	command_name,
-	method_name
-};
-
 constexpr unsigned int switchHash(const char *s, int off = 0) {
 	return !s[off] ? 5381 : (switchHash(s, off + 1) * 33) ^ s[off];
+}
+
+string countDistance_int(int(*metricFun)(const TreeTemplate<Node>&, const TreeTemplate<Node>&, bool, bool), TreeTemplate<Node> *t1, TreeTemplate<Node> *t2, bool constr)
+{
+	stringstream ss;
+	try {
+		ss << metricFun(*t1, *t2, false, constr);
+	}
+	catch (bpp::Exception e) {
+		ss << e.what();
+	}
+	catch (exception e) {
+		ss << e.what();
+	}
+	return ss.str();
+}
+
+string countDistance_double(double(*metricFun)(const TreeTemplate<Node>&, const TreeTemplate<Node>&, bool, bool), TreeTemplate<Node> *t1, TreeTemplate<Node> *t2, bool constr)
+{
+	stringstream ss;
+	try {
+		ss << metricFun(*t1, *t2, false, constr);
+	}
+	catch (bpp::Exception e) {
+		ss << e.what();
+	}
+	catch (exception e) {
+		ss << e.what();
+	}
+	return ss.str();
 }
 
 class TreeReCmpApp : public Application
 {
 
 public:
-	TreeReCmpApp() : _helpRequested(false)
+	TreeReCmpApp() : _helpRequested(false), _checkConstraints(false)
 	{
-		string configFilePath = "..\\config\\config.xml";
-
-		Poco::FileInputStream istr(configFilePath);		
-
+		Poco::FileInputStream istr(_configFilePath);		
 		XMLStreamParser confParser(istr, "config_parser", XMLStreamParser::RECEIVE_ELEMENTS | XMLStreamParser::RECEIVE_CHARACTERS);
-		//WhitespaceFilter wsf(confParser);
 		try {
 			while (confParser.next() != XMLStreamParser::EV_EOF) {
 				if (confParser.peek() == XMLStreamParser::EV_START_ELEMENT && (confParser.localName().compare(0, 6,"metric") == 0)) {
@@ -239,7 +259,7 @@ public:
 
 	void handleMode(const std::string& name, const std::string& value)
 	{
-		_modeName = name;
+		_comparisonMode = name;
 	}
 
 	void handleInputFile(const std::string& name, const std::string& value)
@@ -255,6 +275,11 @@ public:
 	void handleAdditionalOptions(const std::string& name, const std::string& value)
 	{
 		_additionalOptions.push_back(name);
+		switch (switchHash(name.c_str())) {
+		case switchHash("NORMALIZE"):
+			_checkConstraints = true;
+			break;
+		}
 	}
 
 	void displayHelp()
@@ -268,8 +293,15 @@ public:
 		helpFormatter.format(std::cout);
 	}
 
+	void print(int i, string result, ofstream& ofs)
+	{
+		ofs << endl << i << "\t" << result;
+	}
+
 	int main(const std::vector<std::string>& args)
 	{
+		ofstream ofs;
+		ofs.open(_outFile);
 		if (_helpRequested /*|| args.empty()*/)
 		{
 			displayHelp();
@@ -277,7 +309,7 @@ public:
 		else
 		{
 			string message = "Active options:\n";
-			message += "Type of the analysis:\t" + _modeName + "\n";
+			message += "Type of the analysis:\t" + _comparisonMode + "\n";
 			message += "Metric:\t\t\t";
 			for (string distance : _chosenDistances) {
 				message += (distance + " ");
@@ -305,22 +337,58 @@ public:
 				return 0;
 			}
 			cout << treesIn.size() << " trees found." << endl;
+			// Calling distance method (depending on the mode)
+			cout << "Counting the distances: PROCESSING: ";
+			int totalTime = 0;
+			totalTime = clock();
+			int k = 0;
+			switch (switchHash(_comparisonMode.c_str())) {
+			case switchHash("matrix"):
+				cout << ((treesIn.size() * (treesIn.size() - 1)) / 2) << " calculations";				
+				for (int i = 0; i < treesIn.size(); i++) {
+					for (int j = i + 1; j < treesIn.size(); j++) {
+						print(k++, countDistance_int(metricFun_int, treesIn[i], treesIn[j], _checkConstraints), ofs);
+					}
+				}
+				break;
+			case switchHash("overlap"):
 
-			/*for (string distance : _chosenDistances) {
+				break;
+			case switchHash("reference"):
+
+				break;
+			case switchHash("window"):
+
+				break;
+			}
+
+			for (string distance : _chosenDistances) {
 				
-			}*/
+			}
+
+			cout << endl
+				<< "Counting the distances: FINISHED." << endl << endl
+				<< "Total calculation time: " << (clock() - totalTime) / 1000000.0F << endl;
+				//<< "For the results see the file: " << outFile << endl;
+			ofs.close();
+			cout << endl;
 		}
 		return Application::EXIT_OK;
 	}
 
 private:
 	bool _helpRequested;
+	bool _checkConstraints;
+	string _configFilePath = "..\\config\\config.xml";
 	vector<DistDesc> _distances;
 	vector<string> _chosenDistances;
 	vector<string> _additionalOptions;
-	string _modeName;
+	string _comparisonMode;
 	string _inFile;
 	string _outFile;
+	int(*metricFun_int)(const TreeTemplate<Node>& trIn1, const TreeTemplate<Node>& trIn2, bool setLeavesId, bool checkNames)
+		= dist::PhylotreeDist::robinsonFoulds;
+	double(*metricFun_double)(const TreeTemplate<Node>& trIn1, const TreeTemplate<Node>& trIn2, bool setLeavesId, bool checkNames);
 };
 
 POCO_APP_MAIN(TreeReCmpApp)

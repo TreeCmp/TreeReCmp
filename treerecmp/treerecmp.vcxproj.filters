@@ -13,10 +13,58 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\hungarianJV">
+      <UniqueIdentifier>{4653b651-90bd-42b4-8bd8-c3aacd9cfc4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\diffs">
+      <UniqueIdentifier>{d1cfb78a-1a37-4a14-b0f9-dcbfbc00b3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\hungarianJV">
+      <UniqueIdentifier>{a1175775-2a23-4741-a610-bfbddf901b42}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="treerecmp.cpp">
       <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ClusterTable.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GenerMatrixTree.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hungarian.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NodesDistanceMatrices.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Partitioning.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PartitionList.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhylotreeDist.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PostorderTree.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QuartetDistance.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TreesManip.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TripletDistance.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hungarianJV\lap.cpp">
+      <Filter>Pliki źródłowe\hungarianJV</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hungarianJV\system.cpp">
+      <Filter>Pliki źródłowe\hungarianJV</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -28,5 +76,52 @@
     <None Include="input.newick">
       <Filter>Pliki zasobów</Filter>
     </None>
+    <None Include="include\diffs\Partitioning.h.diff">
+      <Filter>Pliki nagłówkowe\diffs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ClusterTable.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GenerMatrixTree.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hungarian.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NodesDistanceMatrices.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Partitioning.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PartitionList.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PhylotreeDist.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PostorderTree.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QuartetDistance.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TreesManip.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TripletDistance.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hungarianJV\gnrl.h">
+      <Filter>Pliki nagłówkowe\hungarianJV</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hungarianJV\lap.h">
+      <Filter>Pliki nagłówkowe\hungarianJV</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hungarianJV\system.h">
+      <Filter>Pliki nagłówkowe\hungarianJV</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

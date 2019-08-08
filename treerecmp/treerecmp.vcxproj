@@ -104,7 +104,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\bpp-core\src\;..\bpp-seq\src\;..\bpp-phyl\src\;..\poco\Util\include;..\poco\Foundation\include;..\poco\XML\include;..\poco\JSON\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;..\bpp-core\src;..\bpp-seq\src;..\bpp-phyl\src;..\poco\Util\include;..\poco\Foundation\include;..\poco\XML\include;..\poco\JSON\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,6 +149,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ClusterTable.cpp" />
+    <ClCompile Include="src\GenerMatrixTree.cpp" />
+    <ClCompile Include="src\Hungarian.cpp" />
+    <ClCompile Include="src\hungarianJV\lap.cpp" />
+    <ClCompile Include="src\hungarianJV\system.cpp" />
+    <ClCompile Include="src\NodesDistanceMatrices.cpp" />
+    <ClCompile Include="src\Partitioning.cpp" />
+    <ClCompile Include="src\PartitionList.cpp" />
+    <ClCompile Include="src\PhylotreeDist.cpp" />
+    <ClCompile Include="src\PostorderTree.cpp" />
+    <ClCompile Include="src\QuartetDistance.cpp" />
+    <ClCompile Include="src\TreesManip.cpp" />
+    <ClCompile Include="src\TripletDistance.cpp" />
     <ClCompile Include="treerecmp.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -178,7 +191,24 @@
     <Xml Include="..\config\config.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="include\diffs\Partitioning.h.diff" />
     <None Include="input.newick" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ClusterTable.h" />
+    <ClInclude Include="include\GenerMatrixTree.h" />
+    <ClInclude Include="include\Hungarian.h" />
+    <ClInclude Include="include\hungarianJV\gnrl.h" />
+    <ClInclude Include="include\hungarianJV\lap.h" />
+    <ClInclude Include="include\hungarianJV\system.h" />
+    <ClInclude Include="include\NodesDistanceMatrices.h" />
+    <ClInclude Include="include\Partitioning.h" />
+    <ClInclude Include="include\PartitionList.h" />
+    <ClInclude Include="include\PhylotreeDist.h" />
+    <ClInclude Include="include\PostorderTree.h" />
+    <ClInclude Include="include\QuartetDistance.h" />
+    <ClInclude Include="include\TreesManip.h" />
+    <ClInclude Include="include\TripletDistance.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
