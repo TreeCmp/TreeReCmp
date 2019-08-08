@@ -57,8 +57,7 @@ public:
 	{
 		string configFilePath = "..\\config\\config.xml";
 
-		Poco::FileInputStream istr(configFilePath);
-		vector<DistDesc>distances;
+		Poco::FileInputStream istr(configFilePath);		
 
 		XMLStreamParser confParser(istr, "config_parser", XMLStreamParser::RECEIVE_ELEMENTS | XMLStreamParser::RECEIVE_CHARACTERS);
 		//WhitespaceFilter wsf(confParser);
@@ -116,7 +115,7 @@ public:
 							}
 						}						
 					}
-					distances.push_back(cet);
+					_distances.push_back(cet);
 				}				
 			}
 			
@@ -130,22 +129,20 @@ public:
 	void defineOptions(OptionSet& options)
 	{
 		setUnixOptions(true);
-		string distInfo = "Allow to specify distances (from 1 up to 12) :\n"
-			"Metrics for unrooted trees :\n"
-			"    ms - the Matching Split metric,\n"
-			"    rf - the Robinson - Foulds metric,\n"
-			"    pd - the Path Difference metric,\n"
-			"    qt - the Quartet metric,\n"
-			"    um - the UMAST metric,\n"
-			"Metrics for rooted trees :\n"
-			"    mc - the Matching Cluster metric,\n"
-			"    rc - the Robinson - Foulds metric based on clusters,\n"
-			"    ns - the Nodal Splitted metric with L2 norm,\n"
-			"    tt - the Triples metric,\n"
-			"    mp - the Matching Pair metric,\n"
-			"    mt - the RMAST metric,\n"
-			"    co - the Cophenetic Metric with L2 norm.\n"
-			"Example: -d ms rf";
+		string distInfo = "Allow to specify distances (from 1 up to "+ to_string(_distances.size()) + "):\n";
+		distInfo += "Metrics for unrooted trees:\n";
+		for (DistDesc dd : _distances) {
+			if (!dd._rooted) {
+				distInfo += " " + dd._command_name + " - " + dd._fullname + ",\n";
+			}
+		}
+		distInfo += "Metrics for rooted trees:\n";
+		for (DistDesc dd : _distances) {
+			if (dd._rooted) {
+				distInfo += " " + dd._command_name + " - " + dd._fullname + ",\n";
+			}
+		}
+		distInfo += "Example: -d ms rf";
 		options.addOption(
 			Option("help", "h", "Display this help information.")
 			.required(false)
@@ -249,7 +246,7 @@ public:
 
 private:
 	bool _helpRequested;
-	set<DistDesc> _distances;
+	vector<DistDesc>_distances;
 };
 
 POCO_APP_MAIN(TreeReCmpApp)
