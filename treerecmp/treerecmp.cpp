@@ -152,65 +152,102 @@ public:
 			Option("overlap", "s", "Overlapping pair comparison mode. Every two neighboring trees are compared.")
 			.required(false)
 			.repeatable(false)
-			.group("mode"));
+			.group("mode")
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleMode)));
 		options.addOption(
 			Option("window", "w", "Window comparison mode. Every two trees within a	window are compared.")
 			.required(false)
 			.repeatable(false)
-			.group("mode"));
+			.group("mode")
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleMode)));
 		options.addOption(
 			Option("matrix", "m", "Matrix comparison mode. Every two trees in the input file are compared.")
 			.required(false)
 			.repeatable(false)
-			.group("mode"));
+			.group("mode")
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleMode)));
 		options.addOption(
 			Option("reference", "r", "Referential trees to all input trees mode. Each referential tree is compared to each tree in the input"
 				"file.")
 			.required(false)
 			.repeatable(false)
 			.argument(" refTreeFile")
-			.group("mode"));
+			.group("mode")
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleMode)));
 		options.addOption(
 			Option("distance", "d", distInfo)
 			.required(true)
 			.repeatable(true)
-			.argument(" distance"));
+			.argument(" distance")
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleDistance)));
 		options.addOption(
 			Option("input", "i", "Specify an input trees file (required).")
 			.required(true)
 			.repeatable(false)
-			.argument(" inputFile"));
+			.argument(" inputFile")
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleInputFile)));
 		options.addOption(
 			Option(" output", "o", "Specify an output file (required).")
 			.required(true)
 			.repeatable(false)
-			.argument(" outputFile"));
+			.argument(" outputFile")
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleOnputFile)));
 		options.addOption(
 			Option("NORMALIZE", "N", "Report normalized distances.")
 			.required(false)
-			.repeatable(false));
+			.repeatable(false)
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleAdditionalOptions)));
 		options.addOption(
 			Option("INCLUDE", "I", "Include summary section in the output file.")
 			.required(false)
-			.repeatable(false));
+			.repeatable(false)
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleAdditionalOptions)));
 		options.addOption(
 			Option("PRUNE", "P", "Prune compared trees if needed (trees can have different leaf sets).")
 			.required(false)
-			.repeatable(false));
+			.repeatable(false)
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleAdditionalOptions)));
 		options.addOption(
 			Option("ALIGNMENT", "A", "Generate alignment files(only for MS and MC metrics).Cannot be used with -O option.")
 			.required(false)
-			.repeatable(false));
+			.repeatable(false)
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleAdditionalOptions)));
 		options.addOption(
 			Option("OPTIMIZE", "O", "Use MS/MC/MP metrics optimized for similar trees. Cannot be used with -A option.")
 			.required(false)
-			.repeatable(false));
+			.repeatable(false)
+			.callback(OptionCallback<TreeReCmpApp>(this, &TreeReCmpApp::handleAdditionalOptions)));
 	}
 
 	void handleHelp(const std::string& name, const std::string& value)
 	{
 		_helpRequested = true;
 		stopOptionsProcessing();
+	}
+
+	void handleDistance(const std::string& name, const std::string& value)
+	{
+		_chosenDistances.push_back(value);
+	}
+
+	void handleMode(const std::string& name, const std::string& value)
+	{
+		_modeName = name;
+	}
+
+	void handleInputFile(const std::string& name, const std::string& value)
+	{
+		_inFile = value;
+	}
+
+	void handleOnputFile(const std::string& name, const std::string& value)
+	{
+		_outFile = value;
+	}
+
+	void handleAdditionalOptions(const std::string& name, const std::string& value)
+	{
+		_additionalOptions.push_back(name);
 	}
 
 	void displayHelp()
@@ -226,27 +263,55 @@ public:
 
 	int main(const std::vector<std::string>& args)
 	{
-		if (_helpRequested || args.empty())
+		if (_helpRequested /*|| args.empty()*/)
 		{
 			displayHelp();
 		}
 		else
 		{
-			Option distances = options().getOption("d");
-			stringstream msg;
-			msg << "Metric:\t\t " << distances.argumentName() << endl;
-			//<< "Comparison mode: " << modeName << endl
-			//<< "Input file:\t " << inFile << endl
-			//<< "Output file:\t " << outFile << endl
-			//<< "------------" << endl;
-			cout << msg.str();
+			string message = "Active options:\n";
+			message += "Type of the analysis:\t" + _modeName + "\n";
+			message += "Metric:\t\t\t";
+			for (string distance : _chosenDistances) {
+				message += (distance + " ");
+			}
+			message += "\n";
+			message += "Input file:\t\t" + _inFile + "\n";
+			message += "Output file:\t\t" + _outFile + "\n";
+			message += "Additional options:\t";
+			for (string addOpt : _additionalOptions) {
+				message += (addOpt + " ");
+			}
+			cout << message;
+
+			//Reading trees
+			/*cout << "Scanning input file... " << flush;
+			vector<TreeTemplate<Node> *> treesIn;
+			vector<TreeTemplate<Node> *> trees;
+			Newick newickReader(false);
+			try {
+				newickReader.read(inFile, (vector<Tree *>&) (treesIn));
+			}
+			catch (exception& e) {
+				cout << "Error when reading trees. Application terminated.\n";
+				return 0;
+			}
+			cout << treesIn.size() << " trees found." << endl;*/
+			for (string distance : _chosenDistances) {
+				
+			}
 		}
 		return Application::EXIT_OK;
 	}
 
 private:
 	bool _helpRequested;
-	vector<DistDesc>_distances;
+	vector<DistDesc> _distances;
+	vector<string> _chosenDistances;
+	vector<string> _additionalOptions;
+	string _modeName;
+	string _inFile;
+	string _outFile;
 };
 
 POCO_APP_MAIN(TreeReCmpApp)
